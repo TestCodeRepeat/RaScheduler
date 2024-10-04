@@ -1,3 +1,4 @@
+import com.android.tools.r8.internal.de
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -33,6 +34,13 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+        }
+        val androidUnitTest by getting {
+            dependencies {
+                implementation(kotlin("test"))
+                implementation(libs.kotest.framework.engine)
+                implementation(libs.kotest.assertions.core)
+            }
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -86,4 +94,3 @@ android {
         debugImplementation(compose.uiTooling)
     }
 }
-

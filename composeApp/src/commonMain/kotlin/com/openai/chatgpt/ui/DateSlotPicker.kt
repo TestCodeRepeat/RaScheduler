@@ -14,7 +14,7 @@ import com.openai.chatgpt.model.GptTimeSlotType
 import kotlinx.datetime.LocalDate
 
 @Composable
-fun DateSlotPicker(dateSlotGroups: List<List<GptDateSlot>>) {
+internal fun DateSlotPicker(dateSlotGroups: List<List<GptDateSlot>>) {
     var selectedSlot by remember { mutableStateOf<Pair<LocalDate, GptTimeSlotType>?>(null) }
 
     LazyRow(

@@ -11,7 +11,7 @@ import kotlinx.datetime.TimeZone
 import kotlinx.datetime.plus
 import kotlinx.datetime.toLocalDateTime
 
-object TimeslotProvider {
+internal object TimeslotProvider {
 
     // Simulated full slots
     val fullSlots = listOf(

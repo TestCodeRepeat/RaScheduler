@@ -13,10 +13,14 @@ androidx-material = "1.12.0"
 androidx-test-junit = "1.2.1"
 compose-plugin = "1.6.11"
 junit = "4.13.2"
+kotestFrameworkEngine = "5.7.2"
 kotlin = "2.0.20"
+kotlinxCoroutinesTest = "1.6.4"
 kotlinxDatetime = "0.4.0"
 
 [libraries]
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotestFrameworkEngine" }
+kotest-framework-engine = { module = "io.kotest:kotest-framework-engine", version.ref = "kotestFrameworkEngine" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -29,6 +33,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
 
 [plugins]
