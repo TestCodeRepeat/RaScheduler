@@ -9,7 +9,6 @@ import androidx.compose.ui.Modifier
 import com.openai.chatgpt.formatToMonthDay
 import com.rascalventures.app.rascheduler.domain.model.DateGroup
 import com.rascalventures.app.rascheduler.domain.model.DateSlot
-import com.rascalventures.app.rascheduler.domain.model.TimeSlotType
 
 @Composable
 fun DateGroupCell(dateGroup: DateGroup, isSelected: () -> Boolean) {

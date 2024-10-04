@@ -9,7 +9,7 @@ import com.rascalventures.app.rascheduler.domain.model.DateGroup
 @Composable
 fun RaSchedulerScreen() {
     val timeSlotRepository = TimeSlotRepository()
-    val dateGroups = timeSlotRepository.generateDateGroups()
+    val dateGroups = timeSlotRepository.generateDateGroups(groupSize = 5)
 
     fun isSelected():Boolean{
         return false
