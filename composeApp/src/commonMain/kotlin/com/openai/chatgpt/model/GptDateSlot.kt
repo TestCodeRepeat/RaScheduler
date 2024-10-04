@@ -2,8 +2,8 @@ package com.openai.chatgpt.model
 
 import kotlinx.datetime.LocalDate
 
-data class DateSlot(
+data class GptDateSlot(
     val date: LocalDate,
-    val timeSlots: List<TimeSlot>,
+    val timeSlots: List<GptTimeSlot>,
     var isAvailable: Boolean = true
 )

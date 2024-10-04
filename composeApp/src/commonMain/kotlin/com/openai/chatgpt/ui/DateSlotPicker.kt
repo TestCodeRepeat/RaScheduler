@@ -9,13 +9,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.openai.chatgpt.model.DateSlot
-import com.openai.chatgpt.model.TimeSlotType
+import com.openai.chatgpt.model.GptDateSlot
+import com.openai.chatgpt.model.GptTimeSlotType
 import kotlinx.datetime.LocalDate
 
 @Composable
-fun DateSlotPicker(dateSlotGroups: List<List<DateSlot>>) {
-    var selectedSlot by remember { mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null) }
+fun DateSlotPicker(dateSlotGroups: List<List<GptDateSlot>>) {
+    var selectedSlot by remember { mutableStateOf<Pair<LocalDate, GptTimeSlotType>?>(null) }
 
     LazyRow(
         modifier = Modifier.fillMaxWidth()

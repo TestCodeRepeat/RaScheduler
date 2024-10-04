@@ -1,8 +1,8 @@
 package com.openai.chatgpt
 
-import com.openai.chatgpt.model.DateSlot
-import com.openai.chatgpt.model.TimeSlot
-import com.openai.chatgpt.model.TimeSlotType
+import com.openai.chatgpt.model.GptDateSlot
+import com.openai.chatgpt.model.GptTimeSlot
+import com.openai.chatgpt.model.GptTimeSlotType
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.DayOfWeek
@@ -15,15 +15,15 @@ object TimeslotProvider {
 
     // Simulated full slots
     val fullSlots = listOf(
-        Pair(LocalDate(2024, 10, 5), TimeSlotType.PM),
-        Pair(LocalDate(2024, 10, 6), TimeSlotType.EVE)
+        Pair(LocalDate(2024, 10, 5), GptTimeSlotType.PM),
+        Pair(LocalDate(2024, 10, 6), GptTimeSlotType.EVE)
     )
 
     // Apply full slots to date slots
     fun applyFullSlots(
-        dateSlots: List<List<DateSlot>>,
-        fullSlots: List<Pair<LocalDate, TimeSlotType>>
-    ): List<List<DateSlot>> {
+        dateSlots: List<List<GptDateSlot>>,
+        fullSlots: List<Pair<LocalDate, GptTimeSlotType>>
+    ): List<List<GptDateSlot>> {
         dateSlots.flatten().forEach { dateSlot ->
             fullSlots.forEach { (fullDate, fullSlotType) ->
                 if (dateSlot.date == fullDate) {
@@ -38,11 +38,11 @@ object TimeslotProvider {
         weeks: Int = 4,
         groupSize: Int = 3,
         flag: Boolean = false
-    ): List<List<DateSlot>> {
+    ): List<List<GptDateSlot>> {
         val today = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
         val endDate = today.plus(weeks * 7, DateTimeUnit.DAY)
 
-        val dateSlots = mutableListOf<DateSlot>()
+        val dateSlots = mutableListOf<GptDateSlot>()
         var currentDate = today
 
         while (currentDate < endDate) {
@@ -51,16 +51,16 @@ object TimeslotProvider {
                 val isWednesdayUnavailable = flag && currentDate.dayOfWeek == DayOfWeek.WEDNESDAY
                 val isSecondFridayFirstSlotUnavailable = isSecondFridayFirstSlotUnavailable(currentDate)
 
-                val timeSlots = TimeSlotType.values().map { timeSlotType ->
+                val timeSlots = GptTimeSlotType.values().map { timeSlotType ->
                     val isSlotAvailable = when {
                         isWednesdayUnavailable -> false
-                        isSecondFridayFirstSlotUnavailable && timeSlotType == TimeSlotType.AM -> false
+                        isSecondFridayFirstSlotUnavailable && timeSlotType == GptTimeSlotType.AM -> false
                         else -> true
                     }
-                    TimeSlot(type = timeSlotType, isAvailable = isSlotAvailable)
+                    GptTimeSlot(type = timeSlotType, isAvailable = isSlotAvailable)
                 }
 
-                val dateSlot = DateSlot(
+                val dateSlot = GptDateSlot(
                     date = currentDate,
                     timeSlots = timeSlots,
                     isAvailable = !isWednesdayUnavailable

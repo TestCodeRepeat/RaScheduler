@@ -1,7 +1,7 @@
 package com.openai.chatgpt.model
 
-data class TimeSlot(
-    val type: TimeSlotType,
+data class GptTimeSlot(
+    val type: GptTimeSlotType,
     var isAvailable: Boolean = true,
     var isSelected: Boolean = false
 )

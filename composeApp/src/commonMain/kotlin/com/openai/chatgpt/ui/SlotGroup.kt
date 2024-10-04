@@ -5,7 +5,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -13,16 +12,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.openai.chatgpt.formatToMonthDay
-import com.openai.chatgpt.model.DateSlot
-import com.openai.chatgpt.model.TimeSlotType
+import com.openai.chatgpt.model.GptDateSlot
+import com.openai.chatgpt.model.GptTimeSlotType
 import kotlinx.datetime.LocalDate
 
 
 @Composable
 fun SlotGroup(
-    dateSlots: List<DateSlot>,
-    selectedSlot: Pair<LocalDate, TimeSlotType>?,
-    onSlotSelected: (LocalDate, TimeSlotType) -> Unit
+    dateSlots: List<GptDateSlot>,
+    selectedSlot: Pair<LocalDate, GptTimeSlotType>?,
+    onSlotSelected: (LocalDate, GptTimeSlotType) -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -38,7 +37,7 @@ fun SlotGroup(
                 )
             }
         }
-        TimeSlotType.entries.forEach { timeSlotType ->
+        GptTimeSlotType.entries.forEach { timeSlotType ->
             Row() {
                 dateSlots.forEach { dateSlot ->
                     val timeSlot = dateSlot.timeSlots.find { it.type == timeSlotType }!!
