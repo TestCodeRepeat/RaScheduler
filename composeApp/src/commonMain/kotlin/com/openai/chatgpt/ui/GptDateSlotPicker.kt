@@ -14,14 +14,14 @@ import com.openai.chatgpt.model.GptTimeSlotType
 import kotlinx.datetime.LocalDate
 
 @Composable
-internal fun DateSlotPicker(dateSlotGroups: List<List<GptDateSlot>>) {
+internal fun GptDateSlotPicker(dateSlotGroups: List<List<GptDateSlot>>) {
     var selectedSlot by remember { mutableStateOf<Pair<LocalDate, GptTimeSlotType>?>(null) }
 
     LazyRow(
         modifier = Modifier.fillMaxWidth()
     ) {
         items(dateSlotGroups) { group ->
-            SlotGroup(
+            GptSlotGroupItem(
                 dateSlots = group,
                 selectedSlot = selectedSlot,
                 onSlotSelected = { date, slotType ->

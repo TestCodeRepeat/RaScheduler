@@ -1,6 +1,6 @@
 package com.rascalventures.app.rascheduler.domain.model
 
-data class DateSlotGroup(
+data class DateGroup(
     val groupIndex: Int,
     val dateSlots: List<DateSlot>
 )

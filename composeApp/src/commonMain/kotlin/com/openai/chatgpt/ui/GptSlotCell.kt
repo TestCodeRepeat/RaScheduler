@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.openai.chatgpt.model.GptTimeSlot
 
 @Composable
-internal fun SlotCell(
+internal fun GptSlotCell(
     timeSlot: GptTimeSlot,
     isSelected: Boolean,
     onClick: () -> Unit

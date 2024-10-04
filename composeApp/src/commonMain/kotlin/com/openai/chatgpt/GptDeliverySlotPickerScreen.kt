@@ -5,7 +5,7 @@ import androidx.compose.runtime.remember
 import com.openai.chatgpt.TimeslotProvider.applyFullSlots
 import com.openai.chatgpt.TimeslotProvider.fullSlots
 import com.openai.chatgpt.TimeslotProvider.generateDateSlots
-import com.openai.chatgpt.ui.DateSlotPicker
+import com.openai.chatgpt.ui.GptDateSlotPicker
 
 @Composable
 fun GptDeliverySlotPickerScreen() {
@@ -21,5 +21,5 @@ fun GptDeliverySlotPickerScreen() {
     dateSlotGroups = applyFullSlots(dateSlotGroups, fullSlots)
 
     // Render the picker
-    DateSlotPicker(dateSlotGroups = dateSlotGroups)
+    GptDateSlotPicker(dateSlotGroups = dateSlotGroups)
 }

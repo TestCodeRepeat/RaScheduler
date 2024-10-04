@@ -4,7 +4,7 @@ import kotlinx.datetime.DayOfWeek
 import kotlinx.datetime.LocalDate
 
 object DateUtils {
-    fun isSecondFridayFirstSlotUnavailable(date: LocalDate): Boolean {
+    fun isSecondFridayOfTheMonth(date: LocalDate): Boolean {
         if (date.dayOfWeek != DayOfWeek.FRIDAY) return false
 
         // Determine the week of the month

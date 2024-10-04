@@ -18,7 +18,7 @@ import kotlinx.datetime.LocalDate
 
 
 @Composable
-internal fun SlotGroup(
+internal fun GptSlotGroupItem(
     dateSlots: List<GptDateSlot>,
     selectedSlot: Pair<LocalDate, GptTimeSlotType>?,
     onSlotSelected: (LocalDate, GptTimeSlotType) -> Unit
@@ -43,7 +43,7 @@ internal fun SlotGroup(
                     val timeSlot = dateSlot.timeSlots.find { it.type == timeSlotType }!!
                     val isSelected =
                         selectedSlot?.first == dateSlot.date && selectedSlot.second == timeSlotType
-                    SlotCell(
+                    GptSlotCell(
                         timeSlot = timeSlot,
                         isSelected = isSelected,
                         onClick = {

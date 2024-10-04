@@ -1,23 +1,51 @@
 package com.rascalventures
 
+import com.rascalventures.app.rascheduler.domain.DateUtils.isSecondFridayOfTheMonth
 import com.rascalventures.app.rascheduler.domain.TimeSlotRepository
 import com.rascalventures.app.rascheduler.domain.model.DateSlot
-import com.rascalventures.app.rascheduler.domain.model.DateSlotGroup
+import com.rascalventures.app.rascheduler.domain.model.DateGroup
+import com.rascalventures.app.rascheduler.domain.model.TimeSlotType
 import io.kotest.matchers.ints.shouldBeGreaterThan
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
 import kotlin.test.Test
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.DayOfWeek
+import kotlinx.datetime.LocalDate
 
 class MainTests {
 
-    val timeSlotRepository = TimeSlotRepository()
+    private val timeSlotRepository = TimeSlotRepository()
+
+
+    @Test
+    fun `should be true when a date is the second friday of the month`() = runTest() {
+        isSecondFridayOfTheMonth(LocalDate(2024, 10, 11)) shouldBe true
+        isSecondFridayOfTheMonth(LocalDate(2024, 10, 18)) shouldBe false
+    }
+
+    @Test
+    fun `ensure second friday is unavailable`() = runTest() {
+        val dateGroups = timeSlotRepository.generateDateGroups()
+        val secondFridayOctober = LocalDate(2024, 10, 11)
+        val allFridays = dateGroups.map { dateGroup ->
+            dateGroup.dateSlots.map { dateSlot -> dateSlot }
+        }.flatten().filter { it.date.dayOfWeek == DayOfWeek.FRIDAY }
+
+        val matchingFriday = allFridays.find { it.date == secondFridayOctober }
+        matchingFriday!!.timeSlots
+            .first { it.type == TimeSlotType.AM }
+            .isAvailable shouldBe false
+
+        matchingFriday.timeSlots
+            .first { it.type == TimeSlotType.PM }
+            .isAvailable shouldBe true
+    }
 
     @Test
     fun `should mark a time slot as selected`() = runTest() {
-        val timeSlots = timeSlotRepository.generateTimeSlots()
-        val selectedDate = timeSlots.first().dateSlots.first()
+        val dateGroups: List<DateGroup> = timeSlotRepository.generateDateGroups()
+        val selectedDate = dateGroups.first().dateSlots.first()
         val selectedSlot = selectedDate.timeSlots[1]
         timeSlotRepository.selectSlot(selectedDate.date, selectedSlot.type)
         timeSlotRepository.selectedSlot.value shouldBe Pair(selectedDate.date, selectedSlot.type)
@@ -25,8 +53,8 @@ class MainTests {
 
     @Test
     fun `no group should include a sunday`() = runTest() {
-        timeSlotRepository.generateTimeSlots(groupSize = 3)
-            .forEach { group: DateSlotGroup ->
+        timeSlotRepository.generateDateGroups(groupSize = 4)
+            .forEach { group: DateGroup ->
                 group.dateSlots.forEach { dateSlot: DateSlot ->
                     dateSlot shouldNotBe DayOfWeek.SUNDAY
                 }
@@ -35,12 +63,12 @@ class MainTests {
 
     @Test
     fun `should handle groups of 6 and 2 date slots`() = runTest() {
-        timeSlotRepository.generateTimeSlots(groupSize = 6)
+        timeSlotRepository.generateDateGroups(groupSize = 6)
             .forEach { dateSlotGroup ->
                 dateSlotGroup.dateSlots.size shouldBe 6
             }
 
-        timeSlotRepository.generateTimeSlots(groupSize = 2)
+        timeSlotRepository.generateDateGroups(groupSize = 2)
             .forEach {
                 it.dateSlots.size shouldBe 2
             }
@@ -48,7 +76,7 @@ class MainTests {
 
     @Test
     fun `should return a list of date slot groups`() = runTest() {
-        val dateSlotGroups = timeSlotRepository.generateTimeSlots()
+        val dateSlotGroups = timeSlotRepository.generateDateGroups()
         dateSlotGroups.size shouldBeGreaterThan 0
     }
 }
