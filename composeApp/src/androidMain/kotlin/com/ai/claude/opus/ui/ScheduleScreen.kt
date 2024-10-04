@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.ai.claude.opus.domain.OpusSlotGenerator
 import com.ai.claude.opus.domain.model.OpusSlot
-import com.openai.chatgpt.formatToMonthDay
+import com.rascalventures.app.rascheduler.domain.DateUtils.formatToMonthDay
 
 
 @Composable

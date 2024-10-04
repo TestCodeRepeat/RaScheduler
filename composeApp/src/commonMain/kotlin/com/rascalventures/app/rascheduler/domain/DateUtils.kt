@@ -14,4 +14,18 @@ object DateUtils {
         // Check if it's every second Friday
         return weekOfMonth % 2 == 0
     }
+
+    fun LocalDate.formatToMonthDay(): String {
+        val dayOfWeek = this.dayOfWeek.name.lowercase().replaceFirstChar { it.uppercase() }.take(3)
+        val month = this.month.name.lowercase().replaceFirstChar { it.uppercase() }.take(3)
+        val dayOfMonth = this.dayOfMonth
+        return "$dayOfWeek $dayOfMonth"
+    }
+
+    fun LocalDate.formatLongMonth(): String {
+        val dayOfWeek = this.dayOfWeek.name.lowercase().replaceFirstChar { it.uppercase() }
+        val month = this.month.name.lowercase().replaceFirstChar { it.uppercase() }
+        val dayOfMonth = this.dayOfMonth
+        return "$dayOfWeek, $month $dayOfMonth"
+    }
 }

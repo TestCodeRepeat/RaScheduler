@@ -12,13 +12,17 @@ import androidx.compose.ui.unit.dp
 import com.rascalventures.app.rascheduler.domain.model.TimeSlot
 
 @Composable
-fun TimeSlotCell(timeSlot: TimeSlot, isSelected: () -> Boolean, onClick: () -> Unit = {}) {
+fun TimeSlotCell(
+    timeSlot: TimeSlot,
+    isSelected: (TimeSlot) -> Boolean,
+    onClick: () -> Unit
+) {
     Box(
         modifier = Modifier
             .padding(4.dp)
             .background(
                 color = when {
-                    isSelected() -> MaterialTheme.colors.primary
+                    isSelected(timeSlot) -> MaterialTheme.colors.primary
                     !timeSlot.isAvailable -> MaterialTheme.colors.error
                     else -> MaterialTheme.colors.primary.copy(alpha = 0.1f)
                 }

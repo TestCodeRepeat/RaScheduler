@@ -94,9 +94,3 @@ internal object TimeslotProvider {
 
 }
 
-fun LocalDate.formatToMonthDay(): String {
-    val dayOfWeek = this.dayOfWeek.name.lowercase().replaceFirstChar { it.uppercase() }.take(3)
-    val month = this.month.name.lowercase().replaceFirstChar { it.uppercase() }.take(3)
-    val day = this.dayOfMonth
-    return "$dayOfWeek $day"
-}

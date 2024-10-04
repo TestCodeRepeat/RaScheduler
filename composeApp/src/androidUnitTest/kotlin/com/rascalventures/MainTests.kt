@@ -19,6 +19,21 @@ class MainTests {
 
 
     @Test
+    fun `wednesday should be marked as unavailable`() = runTest() {
+        val dateGroups = timeSlotRepository.generateDateGroups(flag = true)
+        dateGroups.forEach { dateGroup ->
+            dateGroup.dateSlots.forEach { dateSlot ->
+                if (dateSlot.date.dayOfWeek == DayOfWeek.WEDNESDAY) {
+                    dateSlot.isAvailable shouldBe false
+                    dateSlot.timeSlots.forEach { timeSlot ->
+                        timeSlot.isAvailable shouldBe false
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
     fun `should be true when a date is the second friday of the month`() = runTest() {
         isSecondFridayOfTheMonth(LocalDate(2024, 10, 11)) shouldBe true
         isSecondFridayOfTheMonth(LocalDate(2024, 10, 18)) shouldBe false
@@ -47,7 +62,7 @@ class MainTests {
         val dateGroups: List<DateGroup> = timeSlotRepository.generateDateGroups()
         val selectedDate = dateGroups.first().dateSlots.first()
         val selectedSlot = selectedDate.timeSlots[1]
-        timeSlotRepository.selectSlot(selectedDate.date, selectedSlot.type)
+        timeSlotRepository.selectSlot(selectedDate.date, selectedSlot)
         timeSlotRepository.selectedSlot.value shouldBe Pair(selectedDate.date, selectedSlot.type)
     }
 

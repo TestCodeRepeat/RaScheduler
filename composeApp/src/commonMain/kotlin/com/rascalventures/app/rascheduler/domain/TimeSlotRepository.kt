@@ -18,8 +18,13 @@ class TimeSlotRepository {
 
     var selectedSlot = mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null)
 
-    fun selectSlot(date: LocalDate, slotType: TimeSlotType) {
-        selectedSlot.value = Pair(date, slotType)
+    fun selectSlot(date: LocalDate, timeSlot: TimeSlot) {
+        selectedSlot.value = Pair(date, timeSlot.type)
+    }
+
+    fun isTimeSlotSelected(date: LocalDate, slotType: TimeSlot): Boolean {
+        val selected = selectedSlot.value
+        return selected != null && selected.first == date && selected.second == slotType.type
     }
 
     fun generateDateGroups(

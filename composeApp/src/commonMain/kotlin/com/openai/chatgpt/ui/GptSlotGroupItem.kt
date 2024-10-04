@@ -11,9 +11,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.openai.chatgpt.formatToMonthDay
 import com.openai.chatgpt.model.GptDateSlot
 import com.openai.chatgpt.model.GptTimeSlotType
+import com.rascalventures.app.rascheduler.domain.DateUtils.formatToMonthDay
 import kotlinx.datetime.LocalDate
 
 
