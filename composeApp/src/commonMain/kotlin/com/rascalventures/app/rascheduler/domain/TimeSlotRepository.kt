@@ -1,7 +1,11 @@
 package com.rascalventures.app.rascheduler.domain
 
-import com.openai.chatgpt.TimeslotProvider.isSecondFridayFirstSlotUnavailable
-import com.openai.chatgpt.model.GptDateSlot
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import com.openai.chatgpt.model.GptTimeSlotType
+import com.rascalventures.app.rascheduler.domain.DateUtils.isSecondFridayFirstSlotUnavailable
 import com.rascalventures.app.rascheduler.domain.model.DateSlot
 import com.rascalventures.app.rascheduler.domain.model.DateSlotGroup
 import com.rascalventures.app.rascheduler.domain.model.TimeSlot
@@ -9,11 +13,19 @@ import com.rascalventures.app.rascheduler.domain.model.TimeSlotType
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.DayOfWeek
+import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.plus
 import kotlinx.datetime.toLocalDateTime
 
 class TimeSlotRepository {
+
+    var selectedSlot = mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null)
+
+    fun selectSlot(date: LocalDate, slotType: TimeSlotType) {
+        selectedSlot.value = Pair(date, slotType)
+    }
+
     fun generateTimeSlots(
         weeks: Int = 4,
         groupSize: Int = 3,
@@ -64,3 +76,4 @@ class TimeSlotRepository {
         return dateSlotGroups
     }
 }
+

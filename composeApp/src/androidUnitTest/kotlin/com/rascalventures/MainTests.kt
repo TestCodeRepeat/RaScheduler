@@ -15,26 +15,40 @@ class MainTests {
     val timeSlotRepository = TimeSlotRepository()
 
     @Test
-    fun `no group should include a sunday`() = runTest() {
-        val groups: List<DateSlotGroup> = timeSlotRepository.generateTimeSlots(groupSize = 3)
-        groups.forEach { group ->
-            group.dateSlots.forEach { dateSlot: DateSlot ->
-                dateSlot shouldNotBe DayOfWeek.SUNDAY
-            }
-        }
+    fun `should mark a time slot as selected`() = runTest() {
+        val timeSlots = timeSlotRepository.generateTimeSlots()
+        val selectedDate = timeSlots.first().dateSlots.first()
+        val selectedSlot = selectedDate.timeSlots[1]
+        timeSlotRepository.selectSlot(selectedDate.date, selectedSlot.type)
+        timeSlotRepository.selectedSlot.value shouldBe Pair(selectedDate.date, selectedSlot.type)
     }
 
     @Test
-    fun `each group should have 6 date slots`() = runTest() {
-        val groups = timeSlotRepository.generateTimeSlots(groupSize = 6)
-        groups.forEach {
-            it.dateSlots.size shouldBe 6
-        }
+    fun `no group should include a sunday`() = runTest() {
+        timeSlotRepository.generateTimeSlots(groupSize = 3)
+            .forEach { group: DateSlotGroup ->
+                group.dateSlots.forEach { dateSlot: DateSlot ->
+                    dateSlot shouldNotBe DayOfWeek.SUNDAY
+                }
+            }
+    }
+
+    @Test
+    fun `should handle groups of 6 and 2 date slots`() = runTest() {
+        timeSlotRepository.generateTimeSlots(groupSize = 6)
+            .forEach { dateSlotGroup ->
+                dateSlotGroup.dateSlots.size shouldBe 6
+            }
+
+        timeSlotRepository.generateTimeSlots(groupSize = 2)
+            .forEach {
+                it.dateSlots.size shouldBe 2
+            }
     }
 
     @Test
     fun `should return a list of date slot groups`() = runTest() {
-        val res = timeSlotRepository.generateTimeSlots()
-        res.size shouldBeGreaterThan 0
+        val dateSlotGroups = timeSlotRepository.generateTimeSlots()
+        dateSlotGroups.size shouldBeGreaterThan 0
     }
 }
