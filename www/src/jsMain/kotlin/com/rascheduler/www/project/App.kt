@@ -14,14 +14,17 @@ import io.kvision.MapsModule
 import io.kvision.MaterialModule
 import io.kvision.ToastifyModule
 import io.kvision.core.AlignItems
+import io.kvision.html.Ul
 import io.kvision.html.button
 import io.kvision.html.h2
 import io.kvision.html.h3
+import io.kvision.html.li
 import io.kvision.html.table
+import io.kvision.html.td
 import io.kvision.html.th
 import io.kvision.html.tr
+import io.kvision.html.ul
 import io.kvision.module
-import io.kvision.panel.HPanel
 import io.kvision.panel.VPanel
 import io.kvision.panel.hPanel
 import io.kvision.panel.root
@@ -51,7 +54,8 @@ class App : Application() {
         root.add(
             VPanel {
                 alignItems = AlignItems.CENTER
-                width = 40.pc
+                width = 100.pc
+            }.bind(dateGroups) { groups: List<DateGroup> ->
                 h2 { +"Hello, ${sharedModel.name} - ${sharedModel.number}  KVision!" }
                 h3 { +"Time slots size ---- : ${timeSlots.size}" }
 
@@ -77,31 +81,41 @@ class App : Application() {
                         }
                     }
                 }
-
-                hPanel {
-                    +"things"
-                    +" to "
-                    +" do "
-                    +" here "
-                }
-
-                simplePanel {
-
-                }.bind(dateGroups){ group: List<DateGroup> ->
-                    +"Date Group: ${group.size}"
-                }
-
-                table(){
-                    tr {
-                        th { +"Date" }
-                        th { +"AM" }
-                        th { +"Office" }
-                        th { +"Start Date" }
-                        th { +"Salary" }
+                +"Date Group: ${groups.size}"
+                ul {
+                    groups.forEach {
+                        DateGroup(it)
                     }
                 }
             }
         )
+    }
+}
+
+private fun Ul.DateGroup(group: DateGroup) {
+    li {
+        +"Date: ${group.dateSlots.first().date}"
+        hPanel {
+            group.dateSlots.forEach { dateSlot ->
+                table {
+                    tr {
+                        th { +"Date" }
+                    }
+                    tr {
+                        td { +"${dateSlot.date}" }
+                    }
+                    tr {
+                        td { +"AM" }
+                    }
+                    tr {
+                        td { +"PM" }
+                    }
+                    tr {
+                        td { +"Evening" }
+                    }
+                }
+            }
+        }
     }
 }
 
