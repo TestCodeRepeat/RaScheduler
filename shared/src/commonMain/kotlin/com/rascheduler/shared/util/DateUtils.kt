@@ -1,4 +1,4 @@
-package com.rascheduler.shared.domain
+package com.rascheduler.shared.util
 
 import kotlinx.datetime.DayOfWeek
 import kotlinx.datetime.LocalDate

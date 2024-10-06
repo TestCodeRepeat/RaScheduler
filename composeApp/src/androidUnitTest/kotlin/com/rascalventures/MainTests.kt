@@ -1,6 +1,6 @@
 package com.rascalventures
 
-import com.rascheduler.shared.domain.DateUtils.isSecondFridayOfTheMonth
+import com.rascheduler.shared.util.DateUtils.isSecondFridayOfTheMonth
 import com.rascheduler.shared.domain.TimeSlotRepository
 import com.rascheduler.shared.domain.model.DateSlot
 import com.rascheduler.shared.domain.model.DateGroup
@@ -16,7 +16,6 @@ import kotlinx.datetime.LocalDate
 class MainTests {
 
     private val timeSlotRepository = TimeSlotRepository()
-
 
     @Test
     fun `wednesday should be marked as unavailable`() = runTest() {

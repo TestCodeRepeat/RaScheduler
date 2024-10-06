@@ -65,3 +65,12 @@
 [2024-10-06 16:14:22,476]-[eventLoopGroupProxy-3-1] INFO  Application - Changes in application detected.
 [2024-10-06 16:14:22,700]-[eventLoopGroupProxy-3-1] INFO  [Koin] - Started 5 definitions in 0.044 ms
 [2024-10-06 16:14:22,700]-[eventLoopGroupProxy-3-1] INFO  Application - Application auto-reloaded in 0.01 seconds.
+[2024-10-06 16:36:54,522]-[main] INFO  [Koin] - Started 5 definitions in 1.274583 ms
+[2024-10-06 16:36:54,524]-[main] INFO  Application - Application started in 0.181 seconds.
+[2024-10-06 16:36:54,582]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 16:38:35,938]-[main] INFO  [Koin] - Started 5 definitions in 1.551375 ms
+[2024-10-06 16:38:35,940]-[main] INFO  Application - Application started in 0.209 seconds.
+[2024-10-06 16:38:36,007]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 16:40:54,877]-[main] INFO  [Koin] - Started 5 definitions in 1.436958 ms
+[2024-10-06 16:40:54,879]-[main] INFO  Application - Application started in 0.209 seconds.
+[2024-10-06 16:40:54,950]-[main] INFO  Application - Responding at http://0.0.0.0:8080

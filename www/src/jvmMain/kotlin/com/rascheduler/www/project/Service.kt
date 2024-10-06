@@ -1,6 +1,6 @@
 package com.rascheduler.www.project
 
-import com.rascheduler.shared.SharedRepository
+import com.rascheduler.shared.domain.SharedRepository
 import org.koin.core.annotation.Factory
 
 @Suppress("ACTUAL_WITHOUT_EXPECT")

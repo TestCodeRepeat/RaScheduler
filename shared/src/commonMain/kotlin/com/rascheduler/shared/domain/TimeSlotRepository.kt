@@ -1,9 +1,10 @@
 package com.rascheduler.shared.domain
 
 import androidx.compose.runtime.mutableStateOf
-import com.rascheduler.shared.domain.DateUtils.isSecondFridayOfTheMonth
+import com.rascheduler.shared.util.DateUtils.isSecondFridayOfTheMonth
 import com.rascheduler.shared.domain.model.DateGroup
 import com.rascheduler.shared.domain.model.DateSlot
+import com.rascheduler.shared.domain.model.SelectedSlot
 import com.rascheduler.shared.domain.model.TimeSlot
 import com.rascheduler.shared.domain.model.TimeSlotType
 import kotlinx.datetime.Clock
@@ -15,19 +16,29 @@ import kotlinx.datetime.plus
 import kotlinx.datetime.toLocalDateTime
 import shared.SharedModel
 
+const val GROUP_SIZE = 5
+const val NUM_WEEKS = 8
+const val FLAG = true
+
+
 class TimeSlotRepository {
 
     val sharedModel = SharedModel("testModel", 1)
 
-    var selectedSlot = mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null)
+    var selectedSlot = mutableStateOf<SelectedSlot?>(null)
+//    var selectedSlot = mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null)
+
+    fun getSelectedSlot(): SelectedSlot? {
+        return selectedSlot.value
+    }
 
     fun selectSlot(date: LocalDate, timeSlot: TimeSlot) {
-        selectedSlot.value = Pair(date, timeSlot.type)
+        selectedSlot.value = SelectedSlot(date, timeSlot.type)
     }
 
     fun isTimeSlotSelected(date: LocalDate, slotType: TimeSlot): Boolean {
         val selected = selectedSlot.value
-        return selected != null && selected.first == date && selected.second == slotType.type
+        return selected != null && selected.date == date && selected.timeSlotType == slotType.type
     }
 
     fun generateDateGroups(

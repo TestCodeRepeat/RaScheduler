@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.openai.chatgpt.model.GptDateSlot
 import com.openai.chatgpt.model.GptTimeSlotType
-import com.rascheduler.shared.domain.DateUtils.formatToMonthDay
+import com.rascheduler.shared.util.DateUtils.formatToMonthDay
 import kotlinx.datetime.LocalDate
 
 

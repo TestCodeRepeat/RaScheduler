@@ -2,27 +2,23 @@ package com.rascalventures.app.rascheduler.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.ShaderBrush
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.rascheduler.shared.domain.DateUtils.formatLongMonth
+import com.rascheduler.shared.domain.FLAG
+import com.rascheduler.shared.domain.GROUP_SIZE
+import com.rascheduler.shared.domain.NUM_WEEKS
+import com.rascheduler.shared.domain.SharedRepository
 import com.rascheduler.shared.domain.TimeSlotRepository
 import com.rascheduler.shared.domain.model.DateGroup
-import com.rascheduler.shared.SharedRepository
+import com.rascheduler.shared.util.DateUtils.formatLongMonth
 import org.jetbrains.compose.ui.tooling.preview.Preview
-
-const val GROUP_SIZE = 5
-const val NUM_WEEKS = 8
-const val FLAG = true
 
 @Composable
 fun RaSchedulerScreen() {
@@ -48,7 +44,7 @@ fun RaSchedulerScreen() {
                     fontStyle = MaterialTheme.typography.h5.fontStyle,
                     fontSize = MaterialTheme.typography.h5.fontSize,
                     textAlign = TextAlign.Center,
-                    text = "Selected Time Slot: \n${timeSlotRepository.selectedSlot.value?.first?.formatLongMonth() ?: "--"}"
+                    text = "Selected Time Slot: \n${timeSlotRepository.selectedSlot.value?.date?.formatLongMonth() ?: "--"}"
                 )
             }
         }

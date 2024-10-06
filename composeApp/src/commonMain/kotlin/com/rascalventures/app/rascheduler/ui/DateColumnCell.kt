@@ -6,7 +6,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.rascheduler.shared.domain.DateUtils.formatToMonthDay
+import com.rascheduler.shared.util.DateUtils.formatToMonthDay
 import com.rascheduler.shared.domain.model.DateSlot
 import com.rascheduler.shared.domain.model.TimeSlot
 import kotlinx.datetime.LocalDate

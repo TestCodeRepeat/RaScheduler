@@ -1,4 +1,4 @@
-package com.rascheduler.shared
+package com.rascheduler.shared.domain
 
 class SharedRepository {
 
