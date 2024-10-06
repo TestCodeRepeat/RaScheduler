@@ -18,10 +18,11 @@ object Model {
         return testList.joinToString { it }
     }
 
-    suspend fun getDateGroups(){
+    suspend fun getDateGroups(): List<DateGroup> {
         print("Model.getDateGroups()")
         val res = pingService.generateDateGroups(5, 31, true)
         print("res.size = ${res.size}\n")
+        return res
     }
 
     suspend fun initModel() {
