@@ -19,6 +19,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
+import shared.SharedModel
 
 val AppScope = CoroutineScope(Dispatchers.Default + SupervisorJob())
 
@@ -28,13 +29,13 @@ class App : Application() {
         val root = root("kvapp") {
         }
         AppScope.launch {
-//            val sharedModel = SharedModel("Hello", 42)
+            val sharedModel = SharedModel("Hello", 42)
             val pingResult = Model.ping("Hello world from client!")
 
             root.add(
                 VPanel {
-                    h2 { +"Hello, KVision!" }
-                    h3 { +"Ping result: $pingResult" }
+                    h2 { +"Hello, ${sharedModel.name} - ${sharedModel.number}  KVision!" }
+                    h3 { +"Ping result here ---- : $pingResult" }
                 }
             )
         }

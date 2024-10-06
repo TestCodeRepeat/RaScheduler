@@ -40,3 +40,9 @@
 [2024-10-06 14:33:58,595]-[main] INFO  [Koin] - Started 5 definitions in 1.254708 ms
 [2024-10-06 14:33:58,597]-[main] INFO  Application - Application started in 0.18 seconds.
 [2024-10-06 14:33:58,656]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 14:37:42,824]-[main] INFO  [Koin] - Started 5 definitions in 1.207125 ms
+[2024-10-06 14:37:42,826]-[main] INFO  Application - Application started in 0.178 seconds.
+[2024-10-06 14:37:42,885]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 14:47:27,437]-[main] INFO  [Koin] - Started 5 definitions in 1.491917 ms
+[2024-10-06 14:47:27,439]-[main] INFO  Application - Application started in 0.187 seconds.
+[2024-10-06 14:47:27,500]-[main] INFO  Application - Responding at http://0.0.0.0:8080
