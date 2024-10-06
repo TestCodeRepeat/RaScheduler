@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlinxSerialization)
 }
 
 val includeIosTargets = project.findProperty("includeIosTargets") == "true"
@@ -63,12 +64,15 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(compose.runtime)
+                implementation(libs.kotlinx.serialization.json)
                 implementation(libs.kotlinx.datetime)
             }
         }
 
         val jsMain by getting {
             dependencies {
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.kotlinx.datetime)
                 implementation("io.kvision:kvision:$kvisionVersion")
                 implementation("io.kvision:kvision-datetime:$kvisionVersion")
                 implementation("io.kvision:kvision-toastify:$kvisionVersion")

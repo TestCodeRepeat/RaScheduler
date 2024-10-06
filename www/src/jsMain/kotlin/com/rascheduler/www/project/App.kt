@@ -2,6 +2,7 @@ package com.rascheduler.www.project
 
 import com.rascheduler.shared.domain.TimeSlotRepository
 import com.rascheduler.shared.domain.model.SelectedSlot
+import com.rascheduler.www.project.Model.basicClick
 import com.rascheduler.www.project.Model.timeSlotRepository
 import com.rascheduler.www.project.Model.timeSlots
 import io.kvision.Application
@@ -37,25 +38,26 @@ class App : Application() {
     override fun start(state: Map<String, Any>) {
         val root = root("kvapp") {
         }
-        AppScope.launch {
-            val sharedModel = SharedModel("Hello", 42)
-            val pingResult = Model.pingServer("boom!")
+        val sharedModel = SharedModel("Hello", 42)
+        root.add(
+            VPanel {
+                h2 { +"Hello, ${sharedModel.name} - ${sharedModel.number}  KVision!" }
+                h3 { +"Time slots size ---- : ${timeSlots.size}" }
 
-            root.add(
-                VPanel {
-                    h2 { +"Hello, ${sharedModel.name} - ${sharedModel.number}  KVision!" }
-                    h3 { +"Ping result here ---- : $pingResult" }
-                    h3 { +"Time slots size ---- : ${timeSlots.size}" }
-
-                    h3 { +"Selected Time Slot: ${Model.selectedSlot}" }
-                    button("Click Me") {
-                        onClick {
-                            println("Button clicked!")
+                h3 { +"Selected Time Slot: ${Model.selectedSlot}" }
+                button("Click Me") {
+                    onClick {
+                        println("Button clicked!")
+                        AppScope.launch {
+                            println("AppScope.launch - Button clicked!")
+                            val res = basicClick()
+                            println("basicClick() returned: $res")
                         }
+
                     }
                 }
-            )
-        }
+            }
+        )
     }
 }
 

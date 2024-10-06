@@ -1,5 +1,8 @@
 package com.rascheduler.shared.domain.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 class TimeSlot(
     val type: TimeSlotType,
     var isAvailable: Boolean = true,

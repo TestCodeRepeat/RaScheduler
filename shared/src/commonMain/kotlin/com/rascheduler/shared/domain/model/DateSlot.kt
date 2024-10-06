@@ -1,7 +1,9 @@
 package com.rascheduler.shared.domain.model
 
 import kotlinx.datetime.LocalDate
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class DateSlot(
     val date: LocalDate,
     val timeSlots: List<TimeSlot>,
