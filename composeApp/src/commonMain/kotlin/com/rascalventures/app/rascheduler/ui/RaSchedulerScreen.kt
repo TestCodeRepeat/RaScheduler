@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.rascalventures.app.rascheduler.domain.DateUtils.formatLongMonth
 import com.rascalventures.app.rascheduler.domain.TimeSlotRepository
 import com.rascalventures.app.rascheduler.domain.model.DateGroup
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 const val GROUP_SIZE = 5
 const val NUM_WEEKS = 8
@@ -59,4 +60,10 @@ fun RaSchedulerScreen() {
         }
     }
 
+}
+
+@Preview
+@Composable
+fun RaSchedulerScreenPreview() {
+    RaSchedulerScreen()
 }
