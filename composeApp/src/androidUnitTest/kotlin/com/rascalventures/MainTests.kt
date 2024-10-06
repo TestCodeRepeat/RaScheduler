@@ -1,10 +1,10 @@
 package com.rascalventures
 
-import com.rascalventures.app.rascheduler.domain.DateUtils.isSecondFridayOfTheMonth
-import com.rascalventures.app.rascheduler.domain.TimeSlotRepository
-import com.rascalventures.app.rascheduler.domain.model.DateSlot
-import com.rascalventures.app.rascheduler.domain.model.DateGroup
-import com.rascalventures.app.rascheduler.domain.model.TimeSlotType
+import com.rascheduler.shared.domain.DateUtils.isSecondFridayOfTheMonth
+import com.rascheduler.shared.domain.TimeSlotRepository
+import com.rascheduler.shared.domain.model.DateSlot
+import com.rascheduler.shared.domain.model.DateGroup
+import com.rascheduler.shared.domain.model.TimeSlotType
 import io.kotest.matchers.ints.shouldBeGreaterThan
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe

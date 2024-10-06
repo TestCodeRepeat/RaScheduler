@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.ai.claude.opus.domain.model.OpusSlot
-import com.rascalventures.app.rascheduler.domain.DateUtils.formatToMonthDay
+import com.rascheduler.shared.domain.DateUtils.formatToMonthDay
 
 @Composable
 fun SlotItem(slot: OpusSlot, onSlotSelected: (OpusSlot) -> Unit) {

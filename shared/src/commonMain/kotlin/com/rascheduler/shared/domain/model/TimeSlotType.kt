@@ -1,4 +1,4 @@
-package com.rascalventures.app.rascheduler.domain.model
+package com.rascheduler.shared.domain.model
 
 enum class TimeSlotType(val label: String) {
     AM("AM"),

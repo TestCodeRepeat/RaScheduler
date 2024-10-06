@@ -1,6 +1,5 @@
-package com.rascalventures.app.rascheduler.domain.model
+package com.rascheduler.shared.domain.model
 
-import com.openai.chatgpt.model.GptDateSlot
 import kotlinx.datetime.LocalDate
 
 data class DateSlot(

@@ -46,3 +46,22 @@
 [2024-10-06 14:47:27,437]-[main] INFO  [Koin] - Started 5 definitions in 1.491917 ms
 [2024-10-06 14:47:27,439]-[main] INFO  Application - Application started in 0.187 seconds.
 [2024-10-06 14:47:27,500]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 14:52:51,720]-[eventLoopGroupProxy-3-4] INFO  Application - Changes in application detected.
+[2024-10-06 14:52:51,963]-[eventLoopGroupProxy-3-4] INFO  [Koin] - Started 5 definitions in 0.052625 ms
+[2024-10-06 14:52:51,963]-[eventLoopGroupProxy-3-4] INFO  Application - Application auto-reloaded in 0.009 seconds.
+[2024-10-06 15:57:59,769]-[eventLoopGroupProxy-3-7] INFO  Application - Changes in application detected.
+[2024-10-06 15:58:00,015]-[eventLoopGroupProxy-3-7] INFO  [Koin] - Started 5 definitions in 0.04425 ms
+[2024-10-06 15:58:00,015]-[eventLoopGroupProxy-3-7] INFO  Application - Application auto-reloaded in 0.017 seconds.
+[2024-10-06 16:05:09,339]-[eventLoopGroupProxy-3-6] INFO  Application - Changes in application detected.
+[2024-10-06 16:09:23,573]-[main] INFO  [Koin] - Started 5 definitions in 1.376916 ms
+[2024-10-06 16:09:23,575]-[main] INFO  Application - Application started in 0.187 seconds.
+[2024-10-06 16:09:23,635]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 16:09:33,488]-[main] INFO  [Koin] - Started 5 definitions in 1.261833 ms
+[2024-10-06 16:09:33,490]-[main] INFO  Application - Application started in 0.187 seconds.
+[2024-10-06 16:09:33,552]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 16:12:15,753]-[main] INFO  [Koin] - Started 5 definitions in 1.395584 ms
+[2024-10-06 16:12:15,755]-[main] INFO  Application - Application started in 0.209 seconds.
+[2024-10-06 16:12:15,828]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 16:14:22,476]-[eventLoopGroupProxy-3-1] INFO  Application - Changes in application detected.
+[2024-10-06 16:14:22,700]-[eventLoopGroupProxy-3-1] INFO  [Koin] - Started 5 definitions in 0.044 ms
+[2024-10-06 16:14:22,700]-[eventLoopGroupProxy-3-1] INFO  Application - Application auto-reloaded in 0.01 seconds.

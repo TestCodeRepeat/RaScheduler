@@ -8,7 +8,6 @@ import io.kvision.FontAwesomeModule
 import io.kvision.BootstrapIconsModule
 import io.kvision.MapsModule
 import io.kvision.MaterialModule
-import io.kvision.html.Span
 import io.kvision.html.h2
 import io.kvision.html.h3
 import io.kvision.module
@@ -30,7 +29,7 @@ class App : Application() {
         }
         AppScope.launch {
             val sharedModel = SharedModel("Hello", 42)
-            val pingResult = Model.ping("boom!")
+            val pingResult = Model.pingServer("boom!")
 
             root.add(
                 VPanel {

@@ -1,4 +1,4 @@
-package com.rascalventures.app.rascheduler.domain.model
+package com.rascheduler.shared.domain.model
 
 class TimeSlot(
     val type: TimeSlotType,

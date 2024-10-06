@@ -11,11 +11,13 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.ShaderBrush
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.rascalventures.app.rascheduler.domain.DateUtils.formatLongMonth
-import com.rascalventures.app.rascheduler.domain.TimeSlotRepository
-import com.rascalventures.app.rascheduler.domain.model.DateGroup
+import com.rascheduler.shared.domain.DateUtils.formatLongMonth
+import com.rascheduler.shared.domain.TimeSlotRepository
+import com.rascheduler.shared.domain.model.DateGroup
+import com.rascheduler.shared.SharedRepository
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 const val GROUP_SIZE = 5
@@ -24,6 +26,7 @@ const val FLAG = true
 
 @Composable
 fun RaSchedulerScreen() {
+    val sharedRepository = SharedRepository()
     val timeSlotRepository = TimeSlotRepository()
     val dateGroups =
         timeSlotRepository.generateDateGroups(
@@ -35,7 +38,7 @@ fun RaSchedulerScreen() {
 
     LazyColumn(modifier = Modifier.fillMaxWidth()) {
 
-        item { Text("SharedModel = ${timeSlotRepository.sharedModel.name} - ${timeSlotRepository.sharedModel.number}") }
+        item { Text("${sharedRepository.hello()}- SharedModel = ${timeSlotRepository.sharedModel.name} - ${timeSlotRepository.sharedModel.number}") }
         item {
             Row(
                 Modifier.padding(start = 16.dp).fillMaxWidth(),

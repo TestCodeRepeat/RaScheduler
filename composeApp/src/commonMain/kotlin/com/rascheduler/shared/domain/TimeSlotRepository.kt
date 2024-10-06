@@ -1,11 +1,11 @@
-package com.rascalventures.app.rascheduler.domain
+package com.rascheduler.shared.domain
 
 import androidx.compose.runtime.mutableStateOf
-import com.rascalventures.app.rascheduler.domain.DateUtils.isSecondFridayOfTheMonth
-import com.rascalventures.app.rascheduler.domain.model.DateSlot
-import com.rascalventures.app.rascheduler.domain.model.DateGroup
-import com.rascalventures.app.rascheduler.domain.model.TimeSlot
-import com.rascalventures.app.rascheduler.domain.model.TimeSlotType
+import com.rascheduler.shared.domain.DateUtils.isSecondFridayOfTheMonth
+import com.rascheduler.shared.domain.model.DateGroup
+import com.rascheduler.shared.domain.model.DateSlot
+import com.rascheduler.shared.domain.model.TimeSlot
+import com.rascheduler.shared.domain.model.TimeSlotType
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.DayOfWeek
@@ -80,4 +80,3 @@ class TimeSlotRepository {
         return dateGroups
     }
 }
-
