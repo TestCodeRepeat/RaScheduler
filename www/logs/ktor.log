@@ -1,0 +1,6 @@
+[2024-10-06 12:53:55,499]-[main] INFO  [Koin] - Started 5 definitions in 1.68975 ms
+[2024-10-06 12:53:55,501]-[main] INFO  Application - Application started in 0.22 seconds.
+[2024-10-06 12:53:55,574]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 12:54:36,207]-[main] INFO  [Koin] - Started 5 definitions in 1.629833 ms
+[2024-10-06 12:54:36,209]-[main] INFO  Application - Application started in 0.306 seconds.
+[2024-10-06 12:54:36,289]-[main] INFO  Application - Responding at http://0.0.0.0:8080
