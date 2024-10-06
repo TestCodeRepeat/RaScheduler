@@ -44,7 +44,7 @@ fun RaSchedulerScreen() {
                     fontStyle = MaterialTheme.typography.h5.fontStyle,
                     fontSize = MaterialTheme.typography.h5.fontSize,
                     textAlign = TextAlign.Center,
-                    text = "Selected Time Slot: \n${timeSlotRepository.selectedSlot.value?.date?.formatLongMonth() ?: "--"}"
+                    text = "Selected Time Slot: \n${timeSlotRepository.slot.value?.date?.formatLongMonth() ?: "--"}"
                 )
             }
         }

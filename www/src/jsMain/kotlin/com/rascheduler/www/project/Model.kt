@@ -31,12 +31,6 @@ object Model {
         return res
     }
 
-    suspend fun initModel() {
-        print("Model.init()")
-//        timeSlots = pingService.generateDateGroups(5, 31, true)
-//        print("Time slots size: ${timeSlots.size}")
-    }
-
     suspend fun pingServer(message: String): String {
         return pingService.ping(message)
     }

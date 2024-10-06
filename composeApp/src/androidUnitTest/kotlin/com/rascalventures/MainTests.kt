@@ -62,7 +62,7 @@ class MainTests {
         val selectedDate = dateGroups.first().dateSlots.first()
         val selectedSlot = selectedDate.timeSlots[1]
         timeSlotRepository.selectSlot(selectedDate.date, selectedSlot)
-        timeSlotRepository.selectedSlot.value shouldBe Pair(selectedDate.date, selectedSlot.type)
+        timeSlotRepository.slot.value shouldBe Pair(selectedDate.date, selectedSlot.type)
     }
 
     @Test

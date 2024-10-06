@@ -25,19 +25,20 @@ class TimeSlotRepository {
 
     val sharedModel = SharedModel("testModel", 1)
 
-    var selectedSlot = mutableStateOf<SelectedSlot?>(null)
+    var slot = mutableStateOf<SelectedSlot?>(null)
+
 //    var selectedSlot = mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null)
 
     fun getSelectedSlot(): SelectedSlot? {
-        return selectedSlot.value
+        return slot.value
     }
 
     fun selectSlot(date: LocalDate, timeSlot: TimeSlot) {
-        selectedSlot.value = SelectedSlot(date, timeSlot.type)
+        slot.value = SelectedSlot(date, timeSlot.type)
     }
 
     fun isTimeSlotSelected(date: LocalDate, slotType: TimeSlot): Boolean {
-        val selected = selectedSlot.value
+        val selected = slot.value
         return selected != null && selected.date == date && selected.timeSlotType == slotType.type
     }
 

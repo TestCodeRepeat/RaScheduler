@@ -13,6 +13,7 @@ actual class PingService : IPingService {
     val sharedRepository = SharedRepository()
     val timeSlotRepository = TimeSlotRepository()
 
+    var slot: SelectedSlot? = null
 
     override suspend fun generateTestList(): List<String> {
         return listOf("one", "two", "three")
@@ -35,9 +36,7 @@ actual class PingService : IPingService {
         return sharedRepository.hello()
     }
 
-    override suspend fun setSelectedSlot(slot: SelectedSlot) {
-
+    override suspend fun updateSelectedSlot(slot: SelectedSlot) {
+        this.slot = slot
     }
-
-
 }
