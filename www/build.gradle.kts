@@ -8,6 +8,9 @@ plugins {
     id("io.kvision") version kvisionVersion
 }
 
+project.extensions.extraProperties["includeIosTargets"] = false
+println("www: includeIosTargets: ${project.findProperty("includeIosTargets")}")
+
 version = "1.0.0-SNAPSHOT"
 group = "com.rascheduler.www"
 

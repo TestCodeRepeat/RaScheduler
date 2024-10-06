@@ -9,7 +9,7 @@ plugins {
 }
 
 val includeIosTargets = project.findProperty("includeIosTargets") == "true"
-println("includeIosTargets: $includeIosTargets")
+println("shared:includeIosTargets: $includeIosTargets")
 
 val kotlinVersion: String by System.getProperties()
 val kvisionVersion: String by System.getProperties()
