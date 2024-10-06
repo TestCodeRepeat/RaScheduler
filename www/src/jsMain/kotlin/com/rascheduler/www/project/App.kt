@@ -30,7 +30,7 @@ class App : Application() {
         }
         AppScope.launch {
             val sharedModel = SharedModel("Hello", 42)
-            val pingResult = Model.ping("Hello world from client!")
+            val pingResult = Model.ping("boom!")
 
             root.add(
                 VPanel {
