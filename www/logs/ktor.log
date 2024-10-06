@@ -344,3 +344,12 @@ Please ensure that class is marked as '@Serializable' and that the serialization
 [2024-10-06 19:24:48,377]-[main] INFO  [Koin] - Started 5 definitions in 1.229 ms
 [2024-10-06 19:24:48,379]-[main] INFO  Application - Application started in 0.179 seconds.
 [2024-10-06 19:24:48,439]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 19:45:34,220]-[main] INFO  [Koin] - Started 5 definitions in 1.267667 ms
+[2024-10-06 19:45:34,222]-[main] INFO  Application - Application started in 0.191 seconds.
+[2024-10-06 19:45:34,279]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 19:57:08,799]-[main] INFO  [Koin] - Started 5 definitions in 1.454375 ms
+[2024-10-06 19:57:08,801]-[main] INFO  Application - Application started in 0.185 seconds.
+[2024-10-06 19:57:08,863]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 20:21:44,155]-[main] INFO  [Koin] - Started 5 definitions in 1.268708 ms
+[2024-10-06 20:21:44,157]-[main] INFO  Application - Application started in 0.177 seconds.
+[2024-10-06 20:21:44,217]-[main] INFO  Application - Responding at http://0.0.0.0:8080

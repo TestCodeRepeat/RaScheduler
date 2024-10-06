@@ -1,6 +1,8 @@
 package com.rascheduler.www.project
 
+import com.rascheduler.shared.domain.model.DateGroup
 import com.rascheduler.www.project.Model.basicClick
+import com.rascheduler.www.project.Model.dateGroups
 import com.rascheduler.www.project.Model.getDateGroups
 import com.rascheduler.www.project.Model.timeSlots
 import io.kvision.Application
@@ -15,10 +17,17 @@ import io.kvision.core.AlignItems
 import io.kvision.html.button
 import io.kvision.html.h2
 import io.kvision.html.h3
+import io.kvision.html.table
+import io.kvision.html.th
+import io.kvision.html.tr
 import io.kvision.module
+import io.kvision.panel.HPanel
 import io.kvision.panel.VPanel
+import io.kvision.panel.hPanel
 import io.kvision.panel.root
+import io.kvision.panel.simplePanel
 import io.kvision.startApplication
+import io.kvision.state.bind
 import io.kvision.state.observableListOf
 import io.kvision.types.toDateF
 import io.kvision.types.toStringF
@@ -66,6 +75,29 @@ class App : Application() {
                             val res = getDateGroups()
                             println("Model.getDateGroups() returned: ${res.first().dateSlots.first().date}")
                         }
+                    }
+                }
+
+                hPanel {
+                    +"things"
+                    +" to "
+                    +" do "
+                    +" here "
+                }
+
+                simplePanel {
+
+                }.bind(dateGroups){ group: List<DateGroup> ->
+                    +"Date Group: ${group.size}"
+                }
+
+                table(){
+                    tr {
+                        th { +"Date" }
+                        th { +"AM" }
+                        th { +"Office" }
+                        th { +"Start Date" }
+                        th { +"Salary" }
                     }
                 }
             }
