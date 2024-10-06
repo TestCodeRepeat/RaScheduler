@@ -1,10 +1,9 @@
 package com.rascheduler.www.project
 
-import com.rascheduler.shared.domain.model.DateGroup
-import com.rascheduler.www.project.Model.basicClick
-import com.rascheduler.www.project.Model.dateGroups
+import com.rascheduler.shared.data.model.SelectedSlotResponse
+import com.rascheduler.www.project.Model.appState
 import com.rascheduler.www.project.Model.getDateGroups
-import com.rascheduler.www.project.Model.timeSlots
+import com.rascheduler.www.project.ui.dateGroupCell
 import io.kvision.Application
 import io.kvision.BootstrapIconsModule
 import io.kvision.CoreModule
@@ -14,34 +13,21 @@ import io.kvision.MapsModule
 import io.kvision.MaterialModule
 import io.kvision.ToastifyModule
 import io.kvision.core.AlignItems
-import io.kvision.html.Ul
+import io.kvision.core.ListStyle
+import io.kvision.core.ListStyleType
 import io.kvision.html.button
-import io.kvision.html.h2
 import io.kvision.html.h3
-import io.kvision.html.li
-import io.kvision.html.table
-import io.kvision.html.td
-import io.kvision.html.th
-import io.kvision.html.tr
 import io.kvision.html.ul
 import io.kvision.module
 import io.kvision.panel.VPanel
-import io.kvision.panel.hPanel
 import io.kvision.panel.root
-import io.kvision.panel.simplePanel
 import io.kvision.startApplication
 import io.kvision.state.bind
-import io.kvision.state.observableListOf
-import io.kvision.types.toDateF
-import io.kvision.types.toStringF
 import io.kvision.utils.pc
-import io.kvision.utils.px
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import kotlinx.serialization.Serializable
-import shared.SharedModel
 
 val AppScope = CoroutineScope(Dispatchers.Default + SupervisorJob())
 
@@ -49,30 +35,26 @@ class App : Application() {
 
     override fun start(state: Map<String, Any>) {
         val root = root("kvapp") {
+            AppScope.launch {
+                getDateGroups()
+            }
         }
-        val sharedModel = SharedModel("Hello", 42)
         root.add(
             VPanel {
                 alignItems = AlignItems.CENTER
                 width = 100.pc
-            }.bind(dateGroups) { groups: List<DateGroup> ->
-                h2 { +"Hello, ${sharedModel.name} - ${sharedModel.number}  KVision!" }
-                h3 { +"Time slots size ---- : ${timeSlots.size}" }
+            }.bind(appState) { appState ->
+                when (val selected = appState.selectedSlot) {
+                    is SelectedSlotResponse.Empty -> {
+                        h3 { +"Selected Time Slot: Empty" }
+                    }
 
-                h3 { +"Selected Time Slot: ${Model.selectedSlot}" }
-                button("Click Me") {
-                    marginBottom = 50.px
-                    width = 25.pc
-                    onClick {
-                        AppScope.launch {
-                            val res = basicClick()
-                            println("basicClick() returned: $res")
-                        }
-
+                    is SelectedSlotResponse.Success -> {
+                        h3 { +"Selected Time Slot: ${selected.slot.date} - ${selected.slot.timeSlotType}" }
                     }
                 }
 
-                button("Data Groups") {
+                button("Refresh Data Groups") {
                     width = 25.pc
                     onClick {
                         AppScope.launch {
@@ -81,96 +63,15 @@ class App : Application() {
                         }
                     }
                 }
-                +"Date Group: ${groups.size}"
+
                 ul {
-                    groups.forEach {
-                        DateGroup(it)
+                    listStyle = ListStyle(ListStyleType.NONE)
+                    appState.dateGroups.forEach { dateGroup ->
+                        dateGroupCell(dateGroup, Model::onTimeSelectTimeSlotClicked, Model::isSelected)
                     }
                 }
             }
         )
-    }
-}
-
-private fun Ul.DateGroup(group: DateGroup) {
-    li {
-        +"Date: ${group.dateSlots.first().date}"
-        hPanel {
-            group.dateSlots.forEach { dateSlot ->
-                table {
-                    tr {
-                        th { +"Date" }
-                    }
-                    tr {
-                        td { +"${dateSlot.date}" }
-                    }
-                    tr {
-                        td { +"AM" }
-                    }
-                    tr {
-                        td { +"PM" }
-                    }
-                    tr {
-                        td { +"Evening" }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-//@Serializable
-//data class Book(val title: String, val author: String, val year: Int, val rating: Int)
-//
-//val model = listOf(
-//    Book("Fairy tales", "Hans Christian Andersen", 1836, 4),
-//    Book("Don Quijote De La Mancha", "Miguel de Cervantes", 1610, 4),
-//    Book("Crime and Punishment", "Fyodor Dostoevsky", 1866, 3),
-//    Book("In Search of Lost Time", "Marcel Proust", 1920, 5)
-//)
-//
-//val testData = observableListOf("One", "Two", "Three")
-
-val data = observableListOf(
-    Employee(
-        "Tiger Nixon",
-        "System Architect",
-        "Edinburgh",
-        false,
-        "2011-04-25".toDateF("YYYY-MM-DD").toStringF("YYYY-MM-DD"),
-        320800
-    ),
-    Employee(
-        "Garrett Winters",
-        "Accountant",
-        "Tokyo",
-        true,
-        "2011-07-25".toDateF("YYYY-MM-DD").toStringF("YYYY-MM-DD"),
-        170750
-    ),
-    Employee(
-        "Ashton Cox",
-        "Junior Technical Author",
-        "San Francisco",
-        true,
-        "2009-01-12".toDateF("YYYY-MM-DD").toStringF("YYYY-MM-DD"),
-        86000
-    )
-)
-
-@Serializable
-data class Employee(
-    val name: String?,
-    val position: String?,
-    val office: String?,
-    val active: Boolean = false,
-    val startDate: String?,
-    val salary: Int?,
-    val id: Int = counter++
-) {
-    companion object {
-        internal var counter = 0
     }
 }
 

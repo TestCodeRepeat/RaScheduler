@@ -9,8 +9,9 @@ import io.kvision.annotations.KVService
 interface IPingService {
     suspend fun ping(message: String): String
     suspend fun helloFromShared(): String
-    suspend fun updateSelectedSlot(slot: SelectedSlot)
+    suspend fun updateSelectedSlot(slot: SelectedSlot): SelectedSlotResponse
     suspend fun generateDateGroups(weeks: Int, groupSize: Int, flag: Boolean): List<DateGroup>
     suspend fun generateTestList(): List<String>
+    suspend fun fetchSelectedSlot(): SelectedSlotResponse
 }
 

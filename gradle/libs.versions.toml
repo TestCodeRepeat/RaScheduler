@@ -16,7 +16,7 @@ junit = "4.13.2"
 kotestFrameworkEngine = "5.7.2"
 kotlin = "2.0.20"
 kotlinxCoroutinesTest = "1.6.4"
-kotlinxDatetime = "0.4.0"
+kotlinxDatetime = "0.6.0"
 kotlinxSerialization = "1.7.3"
 
 [libraries]

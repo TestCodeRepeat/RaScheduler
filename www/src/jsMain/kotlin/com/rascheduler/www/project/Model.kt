@@ -1,38 +1,52 @@
 package com.rascheduler.www.project
 
+import com.rascheduler.shared.data.model.SelectedSlotResponse
 import com.rascheduler.shared.domain.TimeSlotRepository
 import com.rascheduler.shared.domain.model.DateGroup
+import com.rascheduler.shared.domain.model.SelectedSlot
+import com.rascheduler.shared.domain.model.TimeSlot
 import io.kvision.remote.getService
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+import kotlinx.datetime.LocalDate
+import kotlinx.serialization.Serializable
+
+data class AppState(
+    val selectedSlot: SelectedSlotResponse,
+    val dateGroups: List<DateGroup>
+)
 
 object Model {
 
-    val timeSlotRepository = TimeSlotRepository()
-    var timeSlots: List<DateGroup> = emptyList()
-    val selectedSlot = timeSlotRepository.getSelectedSlot()
-
-    val _dateGroups =  MutableStateFlow(emptyList<DateGroup>())
-    val dateGroups = _dateGroups.asStateFlow()
+    private val _appState = MutableStateFlow(AppState(SelectedSlotResponse.Empty("-"), emptyList()))
+    val appState = _appState.asStateFlow()
 
     private val pingService = getService<IPingService>()
 
-    suspend fun basicClick(): String {
-        print("Model.basicClick()")
-        val testList = pingService.generateTestList()
-        return testList.joinToString { it }
-    }
-
     suspend fun getDateGroups(): List<DateGroup> {
-        print("Model.getDateGroups()")
-        val res = pingService.generateDateGroups(5, 31, true)
-        print("res.size = ${res.size}\n")
-        _dateGroups.value = res
+        val res = pingService.generateDateGroups(15, 7, true)
+        _appState.value = appState.value.copy(dateGroups = res)
         return res
     }
 
-    suspend fun pingServer(message: String): String {
-        return pingService.ping(message)
+    fun onTimeSelectTimeSlotClicked(date: LocalDate, timeSlot: TimeSlot) {
+        AppScope.launch {
+            val res = pingService.updateSelectedSlot(SelectedSlot(date, timeSlot.type))
+            _appState.value = appState.value.copy(selectedSlot = res)
+        }
     }
 
+    fun isSelected(date: LocalDate, timeSlot: TimeSlot): Boolean {
+        return when (val selected = appState.value.selectedSlot) {
+            is SelectedSlotResponse.Empty -> false
+            is SelectedSlotResponse.Success -> {
+                selected.slot.date == date && selected.slot.timeSlotType == timeSlot.type
+            }
+        }
+    }
+
+    suspend fun getSelectedSlot() {
+        _appState.value = appState.value.copy(selectedSlot = pingService.fetchSelectedSlot())
+    }
 }

@@ -1,0 +1,26 @@
+body {
+    background: black;
+    color: white;
+}
+
+.slot-square {
+    width: 3em;
+    height: 3em;
+    background: blue;
+}
+
+.slot-square-selected{
+    width: 3em;
+    height: 3em;
+    background: green;
+}
+
+.slot-square-unavailable{
+    width: 3em;
+    height: 3em;
+    background: #7e0202;
+}
+
+th {
+    font-style: normal;
+}

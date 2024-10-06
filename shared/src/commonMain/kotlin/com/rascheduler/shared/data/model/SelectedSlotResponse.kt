@@ -5,6 +5,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 sealed class SelectedSlotResponse {
-    data class Success(val selectedSlot: SelectedSlot) : SelectedSlotResponse()
-    data object Empty : SelectedSlotResponse()
+    @Serializable
+    data class Success(val slot: SelectedSlot) : SelectedSlotResponse()
+    @Serializable
+    data class Empty(val message:String) : SelectedSlotResponse()
 }

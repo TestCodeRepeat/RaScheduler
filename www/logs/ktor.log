@@ -1,106 +1,18 @@
-[2024-10-06 12:53:55,499]-[main] INFO  [Koin] - Started 5 definitions in 1.68975 ms
-[2024-10-06 12:53:55,501]-[main] INFO  Application - Application started in 0.22 seconds.
-[2024-10-06 12:53:55,574]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 12:54:36,207]-[main] INFO  [Koin] - Started 5 definitions in 1.629833 ms
-[2024-10-06 12:54:36,209]-[main] INFO  Application - Application started in 0.306 seconds.
-[2024-10-06 12:54:36,289]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 13:00:48,974]-[main] INFO  [Koin] - Started 5 definitions in 2.468375 ms
-[2024-10-06 13:00:48,976]-[main] INFO  Application - Application started in 0.588 seconds.
-[2024-10-06 13:00:49,085]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 13:15:11,238]-[main] INFO  [Koin] - Started 5 definitions in 2.020459 ms
-[2024-10-06 13:15:11,240]-[main] INFO  Application - Application started in 0.261 seconds.
-[2024-10-06 13:15:11,325]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 13:17:05,981]-[main] INFO  [Koin] - Started 5 definitions in 1.231292 ms
-[2024-10-06 13:17:05,983]-[main] INFO  Application - Application started in 0.19 seconds.
-[2024-10-06 13:17:06,043]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 13:24:27,946]-[main] INFO  [Koin] - Started 5 definitions in 1.265375 ms
-[2024-10-06 13:24:27,948]-[main] INFO  Application - Application started in 0.228 seconds.
-[2024-10-06 13:24:28,015]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 13:40:12,505]-[main] INFO  [Koin] - Started 5 definitions in 1.266291 ms
-[2024-10-06 13:40:12,508]-[main] INFO  Application - Application started in 0.174 seconds.
-[2024-10-06 13:40:12,569]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 13:43:21,206]-[main] INFO  [Koin] - Started 5 definitions in 2.104417 ms
-[2024-10-06 13:43:21,209]-[main] INFO  Application - Application started in 0.186 seconds.
-[2024-10-06 13:43:21,271]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:14:27,060]-[main] INFO  [Koin] - Started 5 definitions in 1.307416 ms
-[2024-10-06 14:14:27,061]-[main] INFO  Application - Application started in 0.173 seconds.
-[2024-10-06 14:14:27,118]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:19:25,645]-[main] INFO  [Koin] - Started 5 definitions in 1.319458 ms
-[2024-10-06 14:19:25,647]-[main] INFO  Application - Application started in 0.176 seconds.
-[2024-10-06 14:19:25,707]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:31:31,079]-[main] INFO  [Koin] - Started 5 definitions in 1.237541 ms
-[2024-10-06 14:31:31,081]-[main] INFO  Application - Application started in 0.183 seconds.
-[2024-10-06 14:31:31,143]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:32:27,994]-[main] INFO  [Koin] - Started 5 definitions in 1.324 ms
-[2024-10-06 14:32:27,996]-[main] INFO  Application - Application started in 0.182 seconds.
-[2024-10-06 14:32:28,057]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:33:13,640]-[main] INFO  [Koin] - Started 5 definitions in 1.284333 ms
-[2024-10-06 14:33:13,641]-[main] INFO  Application - Application started in 0.185 seconds.
-[2024-10-06 14:33:13,703]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:33:58,595]-[main] INFO  [Koin] - Started 5 definitions in 1.254708 ms
-[2024-10-06 14:33:58,597]-[main] INFO  Application - Application started in 0.18 seconds.
-[2024-10-06 14:33:58,656]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:37:42,824]-[main] INFO  [Koin] - Started 5 definitions in 1.207125 ms
-[2024-10-06 14:37:42,826]-[main] INFO  Application - Application started in 0.178 seconds.
-[2024-10-06 14:37:42,885]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:47:27,437]-[main] INFO  [Koin] - Started 5 definitions in 1.491917 ms
-[2024-10-06 14:47:27,439]-[main] INFO  Application - Application started in 0.187 seconds.
-[2024-10-06 14:47:27,500]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 14:52:51,720]-[eventLoopGroupProxy-3-4] INFO  Application - Changes in application detected.
-[2024-10-06 14:52:51,963]-[eventLoopGroupProxy-3-4] INFO  [Koin] - Started 5 definitions in 0.052625 ms
-[2024-10-06 14:52:51,963]-[eventLoopGroupProxy-3-4] INFO  Application - Application auto-reloaded in 0.009 seconds.
-[2024-10-06 15:57:59,769]-[eventLoopGroupProxy-3-7] INFO  Application - Changes in application detected.
-[2024-10-06 15:58:00,015]-[eventLoopGroupProxy-3-7] INFO  [Koin] - Started 5 definitions in 0.04425 ms
-[2024-10-06 15:58:00,015]-[eventLoopGroupProxy-3-7] INFO  Application - Application auto-reloaded in 0.017 seconds.
-[2024-10-06 16:05:09,339]-[eventLoopGroupProxy-3-6] INFO  Application - Changes in application detected.
-[2024-10-06 16:09:23,573]-[main] INFO  [Koin] - Started 5 definitions in 1.376916 ms
-[2024-10-06 16:09:23,575]-[main] INFO  Application - Application started in 0.187 seconds.
-[2024-10-06 16:09:23,635]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 16:09:33,488]-[main] INFO  [Koin] - Started 5 definitions in 1.261833 ms
-[2024-10-06 16:09:33,490]-[main] INFO  Application - Application started in 0.187 seconds.
-[2024-10-06 16:09:33,552]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 16:12:15,753]-[main] INFO  [Koin] - Started 5 definitions in 1.395584 ms
-[2024-10-06 16:12:15,755]-[main] INFO  Application - Application started in 0.209 seconds.
-[2024-10-06 16:12:15,828]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 16:14:22,476]-[eventLoopGroupProxy-3-1] INFO  Application - Changes in application detected.
-[2024-10-06 16:14:22,700]-[eventLoopGroupProxy-3-1] INFO  [Koin] - Started 5 definitions in 0.044 ms
-[2024-10-06 16:14:22,700]-[eventLoopGroupProxy-3-1] INFO  Application - Application auto-reloaded in 0.01 seconds.
-[2024-10-06 16:36:54,522]-[main] INFO  [Koin] - Started 5 definitions in 1.274583 ms
-[2024-10-06 16:36:54,524]-[main] INFO  Application - Application started in 0.181 seconds.
-[2024-10-06 16:36:54,582]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 16:38:35,938]-[main] INFO  [Koin] - Started 5 definitions in 1.551375 ms
-[2024-10-06 16:38:35,940]-[main] INFO  Application - Application started in 0.209 seconds.
-[2024-10-06 16:38:36,007]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 16:40:54,877]-[main] INFO  [Koin] - Started 5 definitions in 1.436958 ms
-[2024-10-06 16:40:54,879]-[main] INFO  Application - Application started in 0.209 seconds.
-[2024-10-06 16:40:54,950]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 17:10:29,421]-[main] INFO  [Koin] - Started 5 definitions in 1.380542 ms
-[2024-10-06 17:10:29,423]-[main] INFO  Application - Application started in 0.182 seconds.
-[2024-10-06 17:10:29,482]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 17:10:37,205]-[main] INFO  [Koin] - Started 5 definitions in 1.396208 ms
-[2024-10-06 17:10:37,206]-[main] INFO  Application - Application started in 0.179 seconds.
-[2024-10-06 17:10:37,265]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 17:19:34,881]-[main] INFO  [Koin] - Started 5 definitions in 1.527125 ms
-[2024-10-06 17:19:34,883]-[main] INFO  Application - Application started in 0.313 seconds.
-[2024-10-06 17:19:34,950]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 17:32:48,151]-[main] INFO  [Koin] - Started 5 definitions in 2.608292 ms
-[2024-10-06 17:32:48,153]-[main] INFO  Application - Application started in 0.196 seconds.
-[2024-10-06 17:32:48,219]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 17:34:06,435]-[eventLoopGroupProxy-4-1] ERROR io.kvision.remote.KVServiceManager - Serializer for class 'DateGroup' is not found.
-Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied.
-
-kotlinx.serialization.SerializationException: Serializer for class 'DateGroup' is not found.
-Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied.
-
-	at kotlinx.serialization.internal.Platform_commonKt.serializerNotRegistered(Platform.common.kt:90)
-	at kotlinx.serialization.SerializersKt__SerializersKt.noCompiledSerializer(Serializers.kt:387)
-	at kotlinx.serialization.SerializersKt.noCompiledSerializer(Unknown Source)
-	at com.rascheduler.www.project.PingServiceManager$special$$inlined$bind$8.invoke(KVServiceBinder.kt:84)
-	at com.rascheduler.www.project.PingServiceManager$special$$inlined$bind$8.invoke(KVServiceBinder.kt:84)
-	at io.kvision.remote.KVServiceManager.createRequestHandler$lambda$0(KVServiceManager.kt:69)
-	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
-	at io.kvision.remote.KVServiceManager.createRequestHandler$lambda$1(KVServiceManager.kt:69)
-	at io.kvision.remote.KVServiceManager.access$createRequestHandler$lambda$1(KVServiceManager.kt:55)
+[2024-10-07 00:29:39,433]-[eventLoopGroupProxy-4-2] ERROR io.kvision.remote.KVServiceManager - Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+kotlinx.serialization.SerializationException: Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:102)
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:114)
+	at kotlinx.serialization.PolymorphicSerializerKt.findPolymorphicSerializer(PolymorphicSerializer.kt:109)
+	at kotlinx.serialization.json.internal.StreamingJsonEncoder.encodeSerializableValue(StreamingJsonEncoder.kt:250)
+	at kotlinx.serialization.json.internal.JsonStreamsKt.encodeByWriter(JsonStreams.kt:99)
+	at kotlinx.serialization.json.Json.encodeToString(Json.kt:125)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNonNullToString(KotlinxObjectDeSerializer.kt:44)
+	at io.kvision.remote.ObjectDeSerializer$DefaultImpls.serializeNullableToString(ObjectDeSerializer.kt:36)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNullableToString(KotlinxObjectDeSerializer.kt:32)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invokeSuspend(KVServiceManager.kt:89)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
@@ -166,21 +78,21 @@ Please ensure that class is marked as '@Serializable' and that the serialization
 	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-[2024-10-06 17:40:28,085]-[eventLoopGroupProxy-4-2] ERROR io.kvision.remote.KVServiceManager - Serializer for class 'DateGroup' is not found.
-Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied.
-
-kotlinx.serialization.SerializationException: Serializer for class 'DateGroup' is not found.
-Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied.
-
-	at kotlinx.serialization.internal.Platform_commonKt.serializerNotRegistered(Platform.common.kt:90)
-	at kotlinx.serialization.SerializersKt__SerializersKt.noCompiledSerializer(Serializers.kt:387)
-	at kotlinx.serialization.SerializersKt.noCompiledSerializer(Unknown Source)
-	at com.rascheduler.www.project.PingServiceManager$special$$inlined$bind$8.invoke(KVServiceBinder.kt:84)
-	at com.rascheduler.www.project.PingServiceManager$special$$inlined$bind$8.invoke(KVServiceBinder.kt:84)
-	at io.kvision.remote.KVServiceManager.createRequestHandler$lambda$0(KVServiceManager.kt:69)
-	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
-	at io.kvision.remote.KVServiceManager.createRequestHandler$lambda$1(KVServiceManager.kt:69)
-	at io.kvision.remote.KVServiceManager.access$createRequestHandler$lambda$1(KVServiceManager.kt:55)
+[2024-10-07 00:30:13,203]-[eventLoopGroupProxy-4-5] ERROR io.kvision.remote.KVServiceManager - Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+kotlinx.serialization.SerializationException: Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:102)
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:114)
+	at kotlinx.serialization.PolymorphicSerializerKt.findPolymorphicSerializer(PolymorphicSerializer.kt:109)
+	at kotlinx.serialization.json.internal.StreamingJsonEncoder.encodeSerializableValue(StreamingJsonEncoder.kt:250)
+	at kotlinx.serialization.json.internal.JsonStreamsKt.encodeByWriter(JsonStreams.kt:99)
+	at kotlinx.serialization.json.Json.encodeToString(Json.kt:125)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNonNullToString(KotlinxObjectDeSerializer.kt:44)
+	at io.kvision.remote.ObjectDeSerializer$DefaultImpls.serializeNullableToString(ObjectDeSerializer.kt:36)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNullableToString(KotlinxObjectDeSerializer.kt:32)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invokeSuspend(KVServiceManager.kt:89)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
@@ -246,21 +158,21 @@ Please ensure that class is marked as '@Serializable' and that the serialization
 	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-[2024-10-06 17:40:36,351]-[eventLoopGroupProxy-4-3] ERROR io.kvision.remote.KVServiceManager - Serializer for class 'DateGroup' is not found.
-Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied.
-
-kotlinx.serialization.SerializationException: Serializer for class 'DateGroup' is not found.
-Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied.
-
-	at kotlinx.serialization.internal.Platform_commonKt.serializerNotRegistered(Platform.common.kt:90)
-	at kotlinx.serialization.SerializersKt__SerializersKt.noCompiledSerializer(Serializers.kt:387)
-	at kotlinx.serialization.SerializersKt.noCompiledSerializer(Unknown Source)
-	at com.rascheduler.www.project.PingServiceManager$special$$inlined$bind$8.invoke(KVServiceBinder.kt:84)
-	at com.rascheduler.www.project.PingServiceManager$special$$inlined$bind$8.invoke(KVServiceBinder.kt:84)
-	at io.kvision.remote.KVServiceManager.createRequestHandler$lambda$0(KVServiceManager.kt:69)
-	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
-	at io.kvision.remote.KVServiceManager.createRequestHandler$lambda$1(KVServiceManager.kt:69)
-	at io.kvision.remote.KVServiceManager.access$createRequestHandler$lambda$1(KVServiceManager.kt:55)
+[2024-10-07 00:30:35,535]-[eventLoopGroupProxy-4-8] ERROR io.kvision.remote.KVServiceManager - Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+kotlinx.serialization.SerializationException: Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:102)
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:114)
+	at kotlinx.serialization.PolymorphicSerializerKt.findPolymorphicSerializer(PolymorphicSerializer.kt:109)
+	at kotlinx.serialization.json.internal.StreamingJsonEncoder.encodeSerializableValue(StreamingJsonEncoder.kt:250)
+	at kotlinx.serialization.json.internal.JsonStreamsKt.encodeByWriter(JsonStreams.kt:99)
+	at kotlinx.serialization.json.Json.encodeToString(Json.kt:125)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNonNullToString(KotlinxObjectDeSerializer.kt:44)
+	at io.kvision.remote.ObjectDeSerializer$DefaultImpls.serializeNullableToString(ObjectDeSerializer.kt:36)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNullableToString(KotlinxObjectDeSerializer.kt:32)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invokeSuspend(KVServiceManager.kt:89)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
 	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
@@ -326,63 +238,110 @@ Please ensure that class is marked as '@Serializable' and that the serialization
 	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-[2024-10-06 17:41:24,464]-[main] INFO  [Koin] - Started 5 definitions in 1.340417 ms
-[2024-10-06 17:41:24,465]-[main] INFO  Application - Application started in 0.211 seconds.
-[2024-10-06 17:41:24,522]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 17:46:07,291]-[eventLoopGroupProxy-3-9] INFO  Application - Changes in application detected.
-[2024-10-06 17:46:07,536]-[eventLoopGroupProxy-3-9] INFO  [Koin] - Started 5 definitions in 0.051625 ms
-[2024-10-06 17:46:07,536]-[eventLoopGroupProxy-3-9] INFO  Application - Application auto-reloaded in 0.01 seconds.
-[2024-10-06 17:52:32,272]-[eventLoopGroupProxy-3-2] INFO  Application - Changes in application detected.
-[2024-10-06 17:52:32,509]-[eventLoopGroupProxy-3-2] INFO  [Koin] - Started 5 definitions in 0.038875 ms
-[2024-10-06 17:52:32,509]-[eventLoopGroupProxy-3-2] INFO  Application - Application auto-reloaded in 0.01 seconds.
-[2024-10-06 17:52:58,891]-[eventLoopGroupProxy-3-3] INFO  Application - Changes in application detected.
-[2024-10-06 17:52:59,129]-[eventLoopGroupProxy-3-3] INFO  [Koin] - Started 5 definitions in 0.057584 ms
-[2024-10-06 17:52:59,130]-[eventLoopGroupProxy-3-3] INFO  Application - Application auto-reloaded in 0.012 seconds.
-[2024-10-06 17:55:55,823]-[eventLoopGroupProxy-3-5] INFO  Application - Changes in application detected.
-[2024-10-06 17:55:56,061]-[eventLoopGroupProxy-3-5] INFO  [Koin] - Started 5 definitions in 0.044834 ms
-[2024-10-06 17:55:56,062]-[eventLoopGroupProxy-3-5] INFO  Application - Application auto-reloaded in 0.014 seconds.
-[2024-10-06 19:24:48,377]-[main] INFO  [Koin] - Started 5 definitions in 1.229 ms
-[2024-10-06 19:24:48,379]-[main] INFO  Application - Application started in 0.179 seconds.
-[2024-10-06 19:24:48,439]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 19:45:34,220]-[main] INFO  [Koin] - Started 5 definitions in 1.267667 ms
-[2024-10-06 19:45:34,222]-[main] INFO  Application - Application started in 0.191 seconds.
-[2024-10-06 19:45:34,279]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 19:57:08,799]-[main] INFO  [Koin] - Started 5 definitions in 1.454375 ms
-[2024-10-06 19:57:08,801]-[main] INFO  Application - Application started in 0.185 seconds.
-[2024-10-06 19:57:08,863]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 20:21:44,155]-[main] INFO  [Koin] - Started 5 definitions in 1.268708 ms
-[2024-10-06 20:21:44,157]-[main] INFO  Application - Application started in 0.177 seconds.
-[2024-10-06 20:21:44,217]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:01:09,921]-[main] INFO  [Koin] - Started 5 definitions in 1.304708 ms
-[2024-10-06 22:01:09,923]-[main] INFO  Application - Application started in 0.187 seconds.
-[2024-10-06 22:01:09,982]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:34:21,092]-[main] INFO  [Koin] - Started 5 definitions in 1.374792 ms
-[2024-10-06 22:34:21,093]-[main] INFO  Application - Application started in 0.181 seconds.
-[2024-10-06 22:34:21,151]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:34:24,539]-[main] INFO  [Koin] - Started 5 definitions in 1.411291 ms
-[2024-10-06 22:34:24,540]-[main] INFO  Application - Application started in 0.182 seconds.
-[2024-10-06 22:34:24,599]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:34:56,533]-[main] INFO  [Koin] - Started 5 definitions in 1.201875 ms
-[2024-10-06 22:34:56,535]-[main] INFO  Application - Application started in 0.171 seconds.
-[2024-10-06 22:34:56,591]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:37:51,609]-[main] INFO  [Koin] - Started 5 definitions in 1.391959 ms
-[2024-10-06 22:37:51,611]-[main] INFO  Application - Application started in 0.178 seconds.
-[2024-10-06 22:37:51,668]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:38:08,159]-[main] INFO  [Koin] - Started 5 definitions in 1.149417 ms
-[2024-10-06 22:38:08,161]-[main] INFO  Application - Application started in 0.184 seconds.
-[2024-10-06 22:38:08,219]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:39:32,568]-[main] INFO  [Koin] - Started 5 definitions in 1.504375 ms
-[2024-10-06 22:39:32,570]-[main] INFO  Application - Application started in 0.241 seconds.
-[2024-10-06 22:39:32,639]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:39:51,801]-[main] INFO  [Koin] - Started 5 definitions in 1.603875 ms
-[2024-10-06 22:39:51,803]-[main] INFO  Application - Application started in 0.204 seconds.
-[2024-10-06 22:39:51,868]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 22:53:09,926]-[main] INFO  [Koin] - Started 5 definitions in 1.284208 ms
-[2024-10-06 22:53:09,928]-[main] INFO  Application - Application started in 0.18 seconds.
-[2024-10-06 22:53:09,986]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 23:02:34,926]-[main] INFO  [Koin] - Started 5 definitions in 1.391417 ms
-[2024-10-06 23:02:34,928]-[main] INFO  Application - Application started in 0.182 seconds.
-[2024-10-06 23:02:34,988]-[main] INFO  Application - Responding at http://0.0.0.0:8080
-[2024-10-06 23:24:02,236]-[main] INFO  [Koin] - Started 5 definitions in 1.281709 ms
-[2024-10-06 23:24:02,238]-[main] INFO  Application - Application started in 0.168 seconds.
-[2024-10-06 23:24:02,293]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 00:33:54,055]-[eventLoopGroupProxy-4-11] ERROR io.kvision.remote.KVServiceManager - Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+kotlinx.serialization.SerializationException: Serializer for subclass 'Empty' is not found in the polymorphic scope of 'SelectedSlotResponse'.
+Check if class with serial name 'Empty' exists and serializer is registered in a corresponding SerializersModule.
+To be registered automatically, class 'Empty' has to be '@Serializable', and the base class 'SelectedSlotResponse' has to be sealed and '@Serializable'.
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:102)
+	at kotlinx.serialization.internal.AbstractPolymorphicSerializerKt.throwSubtypeNotRegistered(AbstractPolymorphicSerializer.kt:114)
+	at kotlinx.serialization.PolymorphicSerializerKt.findPolymorphicSerializer(PolymorphicSerializer.kt:109)
+	at kotlinx.serialization.json.internal.StreamingJsonEncoder.encodeSerializableValue(StreamingJsonEncoder.kt:250)
+	at kotlinx.serialization.json.internal.JsonStreamsKt.encodeByWriter(JsonStreams.kt:99)
+	at kotlinx.serialization.json.Json.encodeToString(Json.kt:125)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNonNullToString(KotlinxObjectDeSerializer.kt:44)
+	at io.kvision.remote.ObjectDeSerializer$DefaultImpls.serializeNullableToString(ObjectDeSerializer.kt:36)
+	at io.kvision.remote.KotlinxObjectDeSerializer.serializeNullableToString(KotlinxObjectDeSerializer.kt:32)
+	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invokeSuspend(KVServiceManager.kt:89)
+	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
+	at io.kvision.remote.KVServiceManager$createRequestHandler$1.invoke(KVServiceManager.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invokeSuspend(Route.kt:116)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceedLoop(DebugPipelineContext.kt:80)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceed(DebugPipelineContext.kt:57)
+	at io.ktor.util.pipeline.DebugPipelineContext.execute$ktor_utils(DebugPipelineContext.kt:63)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.routing.Routing.executeResult(Routing.kt:190)
+	at io.ktor.server.routing.Routing.interceptor(Routing.kt:64)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invokeSuspend(Routing.kt:140)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceedLoop(DebugPipelineContext.kt:80)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceed(DebugPipelineContext.kt:57)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invokeSuspend(BaseApplicationEngine.kt:124)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceedLoop(DebugPipelineContext.kt:80)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceed(DebugPipelineContext.kt:57)
+	at io.ktor.util.pipeline.DebugPipelineContext.execute$ktor_utils(DebugPipelineContext.kt:63)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:123)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceedLoop(DebugPipelineContext.kt:80)
+	at io.ktor.util.pipeline.DebugPipelineContext.proceed(DebugPipelineContext.kt:57)
+	at io.ktor.util.pipeline.DebugPipelineContext.execute$ktor_utils(DebugPipelineContext.kt:63)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invokeSuspend(NettyApplicationCallHandler.kt:140)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:20)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:360)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:124)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:52)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at io.ktor.server.netty.NettyApplicationCallHandler.handleRequest(NettyApplicationCallHandler.kt:41)
+	at io.ktor.server.netty.NettyApplicationCallHandler.channelRead(NettyApplicationCallHandler.kt:33)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:425)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-10-07 00:36:37,725]-[main] INFO  [Koin] - Started 5 definitions in 1.441125 ms
+[2024-10-07 00:36:37,727]-[main] INFO  Application - Application started in 0.187 seconds.
+[2024-10-07 00:36:37,787]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 00:39:36,571]-[main] INFO  [Koin] - Started 5 definitions in 1.332958 ms
+[2024-10-07 00:39:36,573]-[main] INFO  Application - Application started in 0.182 seconds.
+[2024-10-07 00:39:36,634]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 00:45:03,609]-[eventLoopGroupProxy-3-9] INFO  Application - Changes in application detected.
+[2024-10-07 00:45:03,858]-[eventLoopGroupProxy-3-9] INFO  [Koin] - Started 5 definitions in 0.065375 ms
+[2024-10-07 00:45:03,858]-[eventLoopGroupProxy-3-9] INFO  Application - Application auto-reloaded in 0.01 seconds.
+[2024-10-07 00:46:26,821]-[eventLoopGroupProxy-3-5] INFO  Application - Changes in application detected.
+[2024-10-07 00:46:27,069]-[eventLoopGroupProxy-3-5] INFO  [Koin] - Started 5 definitions in 0.03425 ms
+[2024-10-07 00:46:27,069]-[eventLoopGroupProxy-3-5] INFO  Application - Application auto-reloaded in 0.018 seconds.
+[2024-10-07 00:53:45,009]-[main] INFO  [Koin] - Started 5 definitions in 1.323666 ms
+[2024-10-07 00:53:45,011]-[main] INFO  Application - Application started in 0.179 seconds.
+[2024-10-07 00:53:45,070]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 00:56:41,815]-[main] INFO  [Koin] - Started 5 definitions in 1.823375 ms
+[2024-10-07 00:56:41,817]-[main] INFO  Application - Application started in 0.201 seconds.
+[2024-10-07 00:56:41,886]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 01:06:11,738]-[main] INFO  [Koin] - Started 5 definitions in 1.133125 ms
+[2024-10-07 01:06:11,740]-[main] INFO  Application - Application started in 0.182 seconds.
+[2024-10-07 01:06:11,796]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 01:12:07,636]-[eventLoopGroupProxy-3-6] INFO  Application - Changes in application detected.
+[2024-10-07 01:12:07,877]-[eventLoopGroupProxy-3-6] INFO  [Koin] - Started 5 definitions in 0.059709 ms
+[2024-10-07 01:12:07,878]-[eventLoopGroupProxy-3-6] INFO  Application - Application auto-reloaded in 0.011 seconds.
+[2024-10-07 01:27:12,668]-[eventLoopGroupProxy-3-2] INFO  Application - Changes in application detected.
+[2024-10-07 01:27:12,918]-[eventLoopGroupProxy-3-2] INFO  [Koin] - Started 5 definitions in 0.038125 ms
+[2024-10-07 01:27:12,918]-[eventLoopGroupProxy-3-2] INFO  Application - Application auto-reloaded in 0.014 seconds.
