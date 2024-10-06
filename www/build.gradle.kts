@@ -6,6 +6,8 @@ plugins {
     kotlin("multiplatform") version kotlinVersion
     val kvisionVersion: String by System.getProperties()
     id("io.kvision") version kvisionVersion
+    alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.compose.compiler)
 }
 
 project.extensions.extraProperties["includeIosTargets"] = false
@@ -60,6 +62,8 @@ kotlin {
             dependencies {
                 api("io.kvision:kvision-server-ktor-koin:$kvisionVersion")
                 implementation(project(":shared"))
+
+                implementation(libs.kotlinx.datetime)
             }
         }
         val commonTest by getting {
@@ -70,6 +74,8 @@ kotlin {
         }
         val jvmMain by getting {
             dependencies {
+                implementation(libs.kotlinx.datetime)
+                implementation(compose.runtime)
                 implementation(kotlin("reflect"))
                 implementation("io.ktor:ktor-server-netty:$ktorVersion")
                 implementation("io.ktor:ktor-server-auth:$ktorVersion")
@@ -86,6 +92,8 @@ kotlin {
         }
         val jsMain by getting {
             dependencies {
+                implementation(libs.kotlinx.datetime)
+                implementation(compose.runtime)
                 implementation("io.kvision:kvision:$kvisionVersion")
                 implementation("io.kvision:kvision-datetime:$kvisionVersion")
                 implementation("io.kvision:kvision-toastify:$kvisionVersion")
