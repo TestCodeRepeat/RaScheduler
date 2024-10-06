@@ -3,12 +3,15 @@ package com.rascheduler.www.project
 import com.rascheduler.shared.domain.TimeSlotRepository
 import com.rascheduler.shared.domain.model.DateGroup
 import io.kvision.remote.getService
+import kotlinx.coroutines.flow.MutableStateFlow
 
 object Model {
 
     val timeSlotRepository = TimeSlotRepository()
     var timeSlots: List<DateGroup> = emptyList()
     val selectedSlot = timeSlotRepository.getSelectedSlot()
+
+    val dateGroups =  MutableStateFlow(emptyList<DateGroup>())
 
     private val pingService = getService<IPingService>()
 
@@ -22,6 +25,7 @@ object Model {
         print("Model.getDateGroups()")
         val res = pingService.generateDateGroups(5, 31, true)
         print("res.size = ${res.size}\n")
+        dateGroups.value
         return res
     }
 

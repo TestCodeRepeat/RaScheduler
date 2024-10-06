@@ -102,9 +102,11 @@ kotlin {
                 implementation("io.kvision:kvision-maps:$kvisionVersion")
                 implementation("io.kvision:kvision-routing-navigo-ng:$kvisionVersion")
                 implementation("io.kvision:kvision-state:$kvisionVersion")
+                implementation("io.kvision:kvision-tabulator:$kvisionVersion")
                 implementation("io.kvision:kvision-state-flow:$kvisionVersion")
                 implementation("io.kvision:kvision-redux-kotlin:$kvisionVersion")
                 implementation("io.kvision:kvision-material:$kvisionVersion")
+//                implementation("io.kvision:kvision-imask:$kvisionVersion")
             }
         }
         val jsTest by getting {

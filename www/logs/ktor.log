@@ -341,3 +341,6 @@ Please ensure that class is marked as '@Serializable' and that the serialization
 [2024-10-06 17:55:55,823]-[eventLoopGroupProxy-3-5] INFO  Application - Changes in application detected.
 [2024-10-06 17:55:56,061]-[eventLoopGroupProxy-3-5] INFO  [Koin] - Started 5 definitions in 0.044834 ms
 [2024-10-06 17:55:56,062]-[eventLoopGroupProxy-3-5] INFO  Application - Application auto-reloaded in 0.014 seconds.
+[2024-10-06 19:24:48,377]-[main] INFO  [Koin] - Started 5 definitions in 1.229 ms
+[2024-10-06 19:24:48,379]-[main] INFO  Application - Application started in 0.179 seconds.
+[2024-10-06 19:24:48,439]-[main] INFO  Application - Responding at http://0.0.0.0:8080
