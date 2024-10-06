@@ -54,6 +54,8 @@ kotlin {
 
             implementation(libs.kotlinx.datetime)
 
+            implementation(project(":shared"))
+
         }
     }
 }
@@ -94,3 +96,4 @@ android {
         debugImplementation(compose.uiTooling)
     }
 }
+

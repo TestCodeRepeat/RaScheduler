@@ -55,6 +55,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api("io.kvision:kvision-server-ktor-koin:$kvisionVersion")
+//                implementation(project(":shared"))
             }
         }
         val commonTest by getting {

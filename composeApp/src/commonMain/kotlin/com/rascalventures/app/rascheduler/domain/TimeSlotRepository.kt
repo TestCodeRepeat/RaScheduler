@@ -13,8 +13,11 @@ import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.plus
 import kotlinx.datetime.toLocalDateTime
+import shared.SharedModel
 
 class TimeSlotRepository {
+
+    val sharedModel = SharedModel("testModel", 1)
 
     var selectedSlot = mutableStateOf<Pair<LocalDate, TimeSlotType>?>(null)
 
