@@ -365,3 +365,24 @@ Please ensure that class is marked as '@Serializable' and that the serialization
 [2024-10-06 22:34:56,533]-[main] INFO  [Koin] - Started 5 definitions in 1.201875 ms
 [2024-10-06 22:34:56,535]-[main] INFO  Application - Application started in 0.171 seconds.
 [2024-10-06 22:34:56,591]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 22:37:51,609]-[main] INFO  [Koin] - Started 5 definitions in 1.391959 ms
+[2024-10-06 22:37:51,611]-[main] INFO  Application - Application started in 0.178 seconds.
+[2024-10-06 22:37:51,668]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 22:38:08,159]-[main] INFO  [Koin] - Started 5 definitions in 1.149417 ms
+[2024-10-06 22:38:08,161]-[main] INFO  Application - Application started in 0.184 seconds.
+[2024-10-06 22:38:08,219]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 22:39:32,568]-[main] INFO  [Koin] - Started 5 definitions in 1.504375 ms
+[2024-10-06 22:39:32,570]-[main] INFO  Application - Application started in 0.241 seconds.
+[2024-10-06 22:39:32,639]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 22:39:51,801]-[main] INFO  [Koin] - Started 5 definitions in 1.603875 ms
+[2024-10-06 22:39:51,803]-[main] INFO  Application - Application started in 0.204 seconds.
+[2024-10-06 22:39:51,868]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 22:53:09,926]-[main] INFO  [Koin] - Started 5 definitions in 1.284208 ms
+[2024-10-06 22:53:09,928]-[main] INFO  Application - Application started in 0.18 seconds.
+[2024-10-06 22:53:09,986]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 23:02:34,926]-[main] INFO  [Koin] - Started 5 definitions in 1.391417 ms
+[2024-10-06 23:02:34,928]-[main] INFO  Application - Application started in 0.182 seconds.
+[2024-10-06 23:02:34,988]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-06 23:24:02,236]-[main] INFO  [Koin] - Started 5 definitions in 1.281709 ms
+[2024-10-06 23:24:02,238]-[main] INFO  Application - Application started in 0.168 seconds.
+[2024-10-06 23:24:02,293]-[main] INFO  Application - Responding at http://0.0.0.0:8080

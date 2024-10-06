@@ -9,9 +9,6 @@ plugins {
     alias(libs.plugins.kotlinxSerialization)
 }
 
-val includeIosTargets = project.findProperty("includeIosTargets") == "true"
-println("shared:includeIosTargets: $includeIosTargets")
-
 val kotlinVersion: String by System.getProperties()
 val kvisionVersion: String by System.getProperties()
 val ktorVersion: String by project
@@ -65,6 +62,7 @@ kotlin {
             dependencies {
                 implementation(compose.runtime)
                 implementation(libs.kotlinx.serialization.json)
+                implementation(libs.kotlinx.serialization.core)
                 implementation(libs.kotlinx.datetime)
             }
         }
@@ -73,6 +71,7 @@ kotlin {
             dependencies {
                 implementation(libs.kotlinx.serialization.json)
                 implementation(libs.kotlinx.datetime)
+                implementation(libs.kotlinx.serialization.core)
                 implementation("io.kvision:kvision:$kvisionVersion")
                 implementation("io.kvision:kvision-datetime:$kvisionVersion")
                 implementation("io.kvision:kvision-toastify:$kvisionVersion")

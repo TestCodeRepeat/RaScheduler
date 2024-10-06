@@ -2,12 +2,12 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 
 plugins {
     val kotlinVersion: String by System.getProperties()
-    kotlin("plugin.serialization") version kotlinVersion
     kotlin("multiplatform") version kotlinVersion
     val kvisionVersion: String by System.getProperties()
     id("io.kvision") version kvisionVersion
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlinxSerialization)
 }
 
 project.extensions.extraProperties["includeIosTargets"] = false
@@ -64,6 +64,7 @@ kotlin {
                 implementation(project(":shared"))
 
                 implementation(libs.kotlinx.datetime)
+                implementation(libs.kotlinx.serialization.core)
             }
         }
         val commonTest by getting {
@@ -76,6 +77,8 @@ kotlin {
             dependencies {
                 implementation(libs.kotlinx.datetime)
                 implementation(compose.runtime)
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.kotlinx.serialization.core)
                 implementation(kotlin("reflect"))
                 implementation("io.ktor:ktor-server-netty:$ktorVersion")
                 implementation("io.ktor:ktor-server-auth:$ktorVersion")
@@ -94,6 +97,8 @@ kotlin {
             dependencies {
                 implementation(libs.kotlinx.datetime)
                 implementation(compose.runtime)
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.kotlinx.serialization.core)
                 implementation("io.kvision:kvision:$kvisionVersion")
                 implementation("io.kvision:kvision-datetime:$kvisionVersion")
                 implementation("io.kvision:kvision-toastify:$kvisionVersion")
