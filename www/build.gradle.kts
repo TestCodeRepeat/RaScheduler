@@ -12,6 +12,7 @@ version = "1.0.0-SNAPSHOT"
 group = "com.rascheduler.www"
 
 repositories {
+    google()
     mavenCentral()
     mavenLocal()
 }
@@ -55,7 +56,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api("io.kvision:kvision-server-ktor-koin:$kvisionVersion")
-//                implementation(project(":shared"))
+                implementation(project(":shared"))
             }
         }
         val commonTest by getting {

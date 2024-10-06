@@ -12,6 +12,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        mavenLocal()
     }
 }
 plugins {
@@ -32,5 +33,5 @@ dependencyResolutionManagement {
 }
 
 include(":composeApp")
+include(":shared")
 include(":www")
-include("shared")

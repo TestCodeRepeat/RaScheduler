@@ -28,6 +28,7 @@ class App : Application() {
         val root = root("kvapp") {
         }
         AppScope.launch {
+//            val sharedModel = SharedModel("Hello", 42)
             val pingResult = Model.ping("Hello world from client!")
 
             root.add(

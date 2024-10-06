@@ -8,8 +8,23 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+val includeIosTargets = project.findProperty("includeIosTargets") == "true"
+println("includeIosTargets: $includeIosTargets")
+
+val kotlinVersion: String by System.getProperties()
+val kvisionVersion: String by System.getProperties()
+val ktorVersion: String by project
+val koinAnnotationsVersion: String by project
+val logbackVersion: String by project
+
 kotlin {
-    jvm()
+    jvmToolchain(17)
+    jvm {
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        compilerOptions {
+            freeCompilerArgs = listOf("-Xjsr305=strict")
+        }
+    }
 
     js(IR) {
         browser {
@@ -33,14 +48,16 @@ kotlin {
         }
     }
 
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "shared"
-            isStatic = true
+    if (includeIosTargets) {
+        listOf(
+            iosX64(),
+            iosArm64(),
+            iosSimulatorArm64()
+        ).forEach { iosTarget ->
+            iosTarget.binaries.framework {
+                baseName = "shared"
+                isStatic = true
+            }
         }
     }
 
@@ -48,6 +65,28 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(compose.runtime)
+            }
+        }
+
+        val jsMain by getting {
+            dependencies {
+                implementation("io.kvision:kvision:$kvisionVersion")
+                implementation("io.kvision:kvision-datetime:$kvisionVersion")
+                implementation("io.kvision:kvision-toastify:$kvisionVersion")
+                implementation("io.kvision:kvision-fontawesome:$kvisionVersion")
+                implementation("io.kvision:kvision-bootstrap-icons:$kvisionVersion")
+                implementation("io.kvision:kvision-maps:$kvisionVersion")
+                implementation("io.kvision:kvision-routing-navigo-ng:$kvisionVersion")
+                implementation("io.kvision:kvision-state:$kvisionVersion")
+                implementation("io.kvision:kvision-state-flow:$kvisionVersion")
+                implementation("io.kvision:kvision-redux-kotlin:$kvisionVersion")
+                implementation("io.kvision:kvision-material:$kvisionVersion")
+            }
+        }
+        val jsTest by getting {
+            dependencies {
+                implementation(kotlin("test-js"))
+                implementation("io.kvision:kvision-testutils:$kvisionVersion")
             }
         }
     }
