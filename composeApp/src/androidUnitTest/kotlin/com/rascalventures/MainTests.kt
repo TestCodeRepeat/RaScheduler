@@ -4,6 +4,7 @@ import com.rascheduler.shared.util.DateUtils.isSecondFridayOfTheMonth
 import com.rascheduler.shared.domain.TimeSlotRepository
 import com.rascheduler.shared.domain.model.DateSlot
 import com.rascheduler.shared.domain.model.DateGroup
+import com.rascheduler.shared.domain.model.SelectedSlot
 import com.rascheduler.shared.domain.model.TimeSlotType
 import io.kotest.matchers.ints.shouldBeGreaterThan
 import io.kotest.matchers.shouldBe
@@ -62,7 +63,7 @@ class MainTests {
         val selectedDate = dateGroups.first().dateSlots.first()
         val selectedSlot = selectedDate.timeSlots[1]
         timeSlotRepository.selectSlot(selectedDate.date, selectedSlot)
-        timeSlotRepository.slot.value shouldBe Pair(selectedDate.date, selectedSlot.type)
+        timeSlotRepository.slot.value shouldBe SelectedSlot(selectedDate.date, selectedSlot.type)
     }
 
     @Test

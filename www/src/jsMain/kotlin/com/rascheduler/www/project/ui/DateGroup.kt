@@ -40,8 +40,11 @@ fun Ul.dateGroupCell(
                     }
                     dateSlot.timeSlots.forEach { timeSlot ->
                         tr {
-                            val className = if (!timeSlot.isAvailable) "slot-square-unavailable" else
-                                if (isSelected(dateSlot.date, timeSlot)) "slot-square-selected" else "slot-square"
+                            val className = when {
+                                !timeSlot.isAvailable -> "slot-square-unavailable"
+                                isSelected(dateSlot.date, timeSlot) -> "slot-square-selected"
+                                else -> "slot-square"
+                            }
                             td(className = className) { +timeSlot.type.name }
                             onClick {
                                 if (timeSlot.isAvailable) {

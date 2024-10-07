@@ -345,3 +345,9 @@ To be registered automatically, class 'Empty' has to be '@Serializable', and the
 [2024-10-07 01:27:12,668]-[eventLoopGroupProxy-3-2] INFO  Application - Changes in application detected.
 [2024-10-07 01:27:12,918]-[eventLoopGroupProxy-3-2] INFO  [Koin] - Started 5 definitions in 0.038125 ms
 [2024-10-07 01:27:12,918]-[eventLoopGroupProxy-3-2] INFO  Application - Application auto-reloaded in 0.014 seconds.
+[2024-10-07 01:44:49,319]-[main] INFO  [Koin] - Started 5 definitions in 1.188875 ms
+[2024-10-07 01:44:49,321]-[main] INFO  Application - Application started in 0.179 seconds.
+[2024-10-07 01:44:49,380]-[main] INFO  Application - Responding at http://0.0.0.0:8080
+[2024-10-07 10:48:18,590]-[main] INFO  [Koin] - Started 5 definitions in 1.178875 ms
+[2024-10-07 10:48:18,592]-[main] INFO  Application - Application started in 0.213 seconds.
+[2024-10-07 10:48:18,661]-[main] INFO  Application - Responding at http://0.0.0.0:8080
